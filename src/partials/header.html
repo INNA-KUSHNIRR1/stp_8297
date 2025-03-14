@@ -1,30 +1,73 @@
 <header class="header">
-  header
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="#benefits" class="nav-link">Benefits</a>
-      </li>
+  <div class="header-container">
+    <div>
+      <button class="btn-burger">
+        <svg width="16" height="14">
+          <use
+            class="icon-burger"
+            href="/assets/icon/symbol-defs.svg#icon-burger"
+          ></use>
+        </svg>
+      </button>
+    </div>
+    <picture>
+      <img
+        class="header-logo"
+        srcset="
+          ../assets/img/logo_mobile.png    1x,
+          ../assets/img/logo_mobile@2x.png 2x
+        "
+        src="../assets/img/logo_mobile.png"
+        alt="logo"
+        width="71"
+        height="40.07"
+        loading="lazy"
+        title="logo"
+      />
+    </picture>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#benefits" class="nav-link">Benefits</a>
+        </li>
 
-      <li class="nav-item">
-        <a href="#game-description" class="nav-link">Game Description</a>
-      </li>
-      <li class="nav-item">
-        <a href="#gallery" class="nav-link">Gallery</a>
-      </li>
+        <li class="nav-item">
+          <a href="#game-description" class="nav-link">Game Description</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gallery" class="nav-link">Gallery</a>
+        </li>
 
-      <li class="nav-item">
-        <a href="#key-features" class="nav-link">Key Features</a>
-      </li>
-      <li class="nav-item">
-        <a href="#main-characters-description" class="nav-link"
-          >Main Characters Description</a
-        >
-      </li>
+        <li class="nav-item">
+          <a href="#key-features" class="nav-link">Key Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#main-characters-description" class="nav-link"
+            >Main Characters Description</a
+          >
+        </li>
 
-      <li class="nav-item">
-        <a href="#reviews" class="nav-link">Reviews</a>
-      </li>
-    </ul>
-  </nav>
+        <li class="nav-item">
+          <a href="#reviews" class="nav-link">Reviews</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- burger menu -->
+
+  <div class="burger-backdrop">
+    <div class="burger-menu">
+      <ul class="menu-list">
+        <li class="menu-item"><a class="menu-link">Benefits</a></li>
+        <li class="menu-item"><a class="menu-link">Game Description</a></li>
+        <li class="menu-item"><a class="menu-link">Gallery</a></li>
+        <li class="menu-item"><a class="menu-link">Key Features</a></li>
+        <li class="menu-item">
+          <a class="menu-link">Main Characters Description</a>
+        </li>
+        <li class="menu-item"><a class="menu-link">Reviews</a></li>
+      </ul>
+    </div>
+  </div>
 </header>

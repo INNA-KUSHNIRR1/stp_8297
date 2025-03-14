@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vanilla App Template</title>
     <meta
       name="description"
       content="Eternal Hero: Action RPG - A thrilling fantasy adventure where your choices shape your destiny! Master weapons, magic, and combat as you explore a world full of danger and mystery."
@@ -16,29 +18,31 @@
     <link rel="canonical" href="https://epiclightplay.com/eternal-hero" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./scss/styles.scss" />
   </head>
   <body>
     <load ="partials/header.html" />
-    <load ="partials/hero.html" />
-    <load ="partials/benefits.html" />
-    <load ="partials/game-description.html" />
-    <load ="partials/gallery.html" />
-    <load ="partials/key-features.html" />
-    <load ="partials/main-characters-description.html" />
-    <load ="partials/reviews.html" />
+    <main>
+      <load ="partials/hero.html" />
+      <load ="partials/benefits.html" />
+      <load ="partials/game-description.html" />
+      <load ="partials/gallery.html" />
+      <load ="partials/key-features.html" />
+      <load ="partials/main-characters-description.html" />
+      <load ="partials/reviews.html" />
+    </main>
     <load ="partials/footer.html" />
+    <load ="partials/modal_cookies.html" />
 
-    <section>
-      <!-- <h1>Example page title</h1> -->
-
-      <!-- Path to images as from index.html file -->
-      <!-- <img src="./img/javascript.svg" alt="" /> -->
-    </section>
-
-    <!-- Loads the specified .html file -->
+    <!-- ????  при удалении выдаёт ошибку -->
     <load ="partials/vite-promo.html" />
+    <!--  -->
 
     <script type="module" src="./main.js"></script>
   </body>
