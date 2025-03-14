@@ -1,0 +1,117 @@
+.header {
+  position: fixed;
+  padding: 24px 24px 16px 24px;
+  color: $_legal_color;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $_legal_bg_color;
+}
+
+main {
+  background-color: $_legal_bg_color;
+  color: $_legal_color;
+}
+.legal-section-container {
+}
+// .legal-section-container h1 {
+//   font-family: Fredoka, sans-serif;
+//   font-weight: 400;
+//   font-size: 24px;
+//   line-height: 24px;
+//   letter-spacing: 0;
+//   padding: 40px 0 16px 0;
+// }
+
+// .legal-section-container h2 {
+//   font-family: Fredoka, sans-serif;
+//   font-size: 16px;
+//   font-weight: 400;
+//   line-height: 24px;
+//   letter-spacing: 0;
+//   padding: 16px 0 16px 0;
+// }
+
+.container {
+  padding: 24px;
+}
+.home-link {
+  color: inherit;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.legal-icon {
+}
+.icon-arrow {
+  fill: $_legal_color;
+  stroke: $_legal_color;
+}
+.cookies-section-title {
+}
+.section-title {
+  color: $_legal_title_color;
+  text-align: center;
+}
+.legal-section-main-title {
+}
+.section-text {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0;
+}
+
+.cookies-section-main-title {
+  font-family: Fredoka, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0;
+  padding: 40px 0 16px 0;
+}
+
+.cookies-section-title {
+  font-family: Fredoka, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0;
+  padding-bottom: 16px;
+}
+.cookies-section-subtitle {
+  font-family: Fredoka, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  padding: 16px 0 16px 0;
+  padding-bottom: 16px;
+}
+
+.legal-section-text {
+}
+.legal-section-list {
+  list-style-type: disc;
+  padding-left: 24px;
+}
+.legal-section-item {
+}
+.legal-section-link {
+}
+.footer {
+  background-color: $_footer_bg_color;
+}
+.section-padding {
+}
+.footer-container {
+}
+.legal-links {
+}
+.legal-link {
+}
+.legal-text {
+}
