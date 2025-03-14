@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vanilla App Template</title>
     <meta
       name="description"
       content="Eternal Hero: Action RPG - A thrilling fantasy adventure where your choices shape your destiny! Master weapons, magic, and combat as you explore a world full of danger and mystery."
@@ -16,44 +18,93 @@
     <link rel="canonical" href="https://epiclightplay.com/eternal-hero" />
 
     <link rel="icon" type="image/svg+xml" href="/stp_8297/favicon.svg" />
-    <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     
     <script type="module" crossorigin src="/stp_8297/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp_8297/assets/styles-34d5bddf.css">
+    <link rel="stylesheet" href="/stp_8297/assets/styles-8e3b4cec.css">
   </head>
   <body>
     <header class="header">
-  header
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="#benefits" class="nav-link">Benefits</a>
-      </li>
+  <div class="header-container">
+    <div>
+      <button class="btn-burger">
+        <svg width="16" height="14">
+          <use
+            class="icon-burger"
+            href="/stp_8297/assets/symbol-defs-ad4b1478.svg#icon-burger"
+          ></use>
+        </svg>
+      </button>
+    </div>
+    <picture>
+      <img
+        class="header-logo"
+        srcset="
+          ../assets/img/logo_mobile.png    1x,
+          ../assets/img/logo_mobile@2x.png 2x
+        "
+        src="../assets/img/logo_mobile.png"
+        alt="logo"
+        width="71"
+        height="40.07"
+        loading="lazy"
+        title="logo"
+      />
+    </picture>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#benefits" class="nav-link">Benefits</a>
+        </li>
 
-      <li class="nav-item">
-        <a href="#game-description" class="nav-link">Game Description</a>
-      </li>
-      <li class="nav-item">
-        <a href="#gallery" class="nav-link">Gallery</a>
-      </li>
+        <li class="nav-item">
+          <a href="#game-description" class="nav-link">Game Description</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gallery" class="nav-link">Gallery</a>
+        </li>
 
-      <li class="nav-item">
-        <a href="#key-features" class="nav-link">Key Features</a>
-      </li>
-      <li class="nav-item">
-        <a href="#main-characters-description" class="nav-link"
-          >Main Characters Description</a
-        >
-      </li>
+        <li class="nav-item">
+          <a href="#key-features" class="nav-link">Key Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#main-characters-description" class="nav-link"
+            >Main Characters Description</a
+          >
+        </li>
 
-      <li class="nav-item">
-        <a href="#reviews" class="nav-link">Reviews</a>
-      </li>
-    </ul>
-  </nav>
+        <li class="nav-item">
+          <a href="#reviews" class="nav-link">Reviews</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- burger menu -->
+
+  <div class="burger-backdrop">
+    <div class="burger-menu">
+      <ul class="menu-list">
+        <li class="menu-item"><a class="menu-link">Benefits</a></li>
+        <li class="menu-item"><a class="menu-link">Game Description</a></li>
+        <li class="menu-item"><a class="menu-link">Gallery</a></li>
+        <li class="menu-item"><a class="menu-link">Key Features</a></li>
+        <li class="menu-item">
+          <a class="menu-link">Main Characters Description</a>
+        </li>
+        <li class="menu-item"><a class="menu-link">Reviews</a></li>
+      </ul>
+    </div>
+  </div>
 </header>
 
-    <section>
+    <main>
+      <section>
   <div>
     <h1>Eternal Hero: Action RPG – Forge Your Destiny!</h1>
     <p>
@@ -71,18 +122,19 @@
   hero
 </section>
 
-    <section id="benefits">benefits</section>
+      <section id="benefits">benefits</section>
 
-    <section id="game-description">Game Description</section>
+      <section id="game-description">Game Description</section>
 
-    <section id="gallery">gallery</section>
+      <section id="gallery">gallery</section>
 
-    <section id="key-features">Key Features</section>
+      <section id="key-features">Key Features</section>
 
-    <section id="main-characters-description">Main Characters Description</section>
+      <section id="main-characters-description">Main Characters Description</section>
 
-    <section id="reviews">Reviews</section>
+      <section id="reviews">Reviews</section>
 
+    </main>
     <footer class="footer">
   <ul class="nav-list">
     <li class="item">
@@ -100,15 +152,9 @@
   <p>All rights reserved epiclightplay.com | 2025</p>
 </footer>
 
+    
 
-    <section>
-      <!-- <h1>Example page title</h1> -->
-
-      <!-- Path to images as from index.html file -->
-      <!-- <img src="./img/javascript.svg" alt="" /> -->
-    </section>
-
-    <!-- Loads the specified .html file -->
+    <!-- ????  при удалении выдаёт ошибку -->
     <!-- <section class="vite-promo">
   <div class="container">
      <div class="wrapper">
@@ -156,6 +202,7 @@
   </div>
 </section> -->
 
+    <!--  -->
 
     
   </body>
