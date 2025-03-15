@@ -22,6 +22,10 @@ main {
 
 .legal-container {
   padding: 24px;
+
+  @include media(desktop) {
+    padding: 40px 32px;
+  }
 }
 
 .home-link {
@@ -37,7 +41,7 @@ main {
   @include media(desktop) {
     &:hover,
     &:focus {
-      color: #ffe0a1;
+      color: $_legal_accent_color;
     }
   }
 }
@@ -54,8 +58,8 @@ main {
   @include media(desktop) {
     .home-link:hover &,
     .home-link:focus & {
-      fill: #efbf5d;
-      stroke: #efbf5d;
+      fill: $_legal_accent_color;
+      stroke: $_legal_accent_color;
     }
   }
 }
@@ -95,13 +99,16 @@ main {
   padding: 40px 0 16px 0;
 
   font-family: Fredoka, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 24px;
   line-height: 24px;
   letter-spacing: 0;
 
   @include media(desktop) {
     padding: 74px 0 40px 0;
+
+    font-size: 48px;
+    line-height: 72px;
   }
 }
 
@@ -109,10 +116,17 @@ main {
   padding-bottom: 16px;
 
   font-family: Fredoka, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 24px;
   line-height: 24px;
   letter-spacing: 0;
+
+  @include media(desktop) {
+    padding: 20px;
+
+    font-size: 48px;
+    line-height: 48px;
+  }
 }
 
 .cookies-section-subtitle {
@@ -120,7 +134,7 @@ main {
 
   font-family: Fredoka, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 24px;
   letter-spacing: 0;
 
@@ -148,11 +162,11 @@ main {
   transition: color 0.3s ease;
   &:hover,
   &:focus {
-    color: #efbf5d;
+    color: $_legal_accent_color;
   }
 
   &:visited {
-    color: #ffe0a1;
+    color: $_legal_visited_color;
   }
 }
 
