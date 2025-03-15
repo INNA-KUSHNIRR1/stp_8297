@@ -26,36 +26,57 @@
     />
     
     <script type="module" crossorigin src="/stp_8297/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp_8297/assets/styles-8e3b4cec.css">
+    <link rel="stylesheet" href="/stp_8297/assets/styles-e9ec9e71.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header-header">
   <div class="header-container">
-    <div>
-      <button class="btn-burger">
-        <svg width="16" height="14">
-          <use
-            class="icon-burger"
-            href="/stp_8297/assets/symbol-defs-ad4b1478.svg#icon-burger"
-          ></use>
-        </svg>
-      </button>
-    </div>
-    <picture>
+    <button class="btn-burger">
+      <svg width="24" height="24">
+        <use
+          class="icon-burger"
+          href="/stp_8297/assets/symbol-defs-ad4b1478.svg#icon-burger"
+        ></use>
+      </svg>
+    </button>
+
+    <!-- <picture>
       <img
         class="header-logo"
         srcset="
-          ../assets/img/logo_mobile.png    1x,
-          ../assets/img/logo_mobile@2x.png 2x
+          ./assets/img/logo_mobile.png    1x,
+          ./assets/img/logo_mobile@2x.png 2x
         "
-        src="../assets/img/logo_mobile.png"
+        src="./assets/img/logo_mobile.png"
         alt="logo"
         width="71"
         height="40.07"
         loading="lazy"
         title="logo"
       />
+    </picture> -->
+
+    <picture>
+      <source
+        media="(max-width: 1200px)"
+        srcset="/stp_8297/assets/logo_mobile-59a31f88.png 1x, /stp_8297/assets/logo_mobile@2x-7007ea80.png 2x"
+        type="image"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="/stp_8297/assets/logo_desktop1x-7372db03.png 1x, /stp_8297/assets/logo_desktop2x-a65b3e60.png 2x"
+        type="image"
+      />
+      <img
+        class="header-logo"
+        src="/stp_8297/assets/logo_desktop1x-7372db03.png"
+        alt="Icon-logo"
+        width="101"
+        height="57"
+        loading="lazy"
+      />
     </picture>
+
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-item">
@@ -104,22 +125,48 @@
 </header>
 
     <main>
-      <section>
-  <div>
-    <h1>Eternal Hero: Action RPG – Forge Your Destiny!</h1>
-    <p>
+      <section class="hero">
+  <div class="hero-container">
+    <h1 class="hero-title">Eternal Hero: Action RPG – Forge Your Destiny!</h1>
+    <p class="hero-text">
       Unleash Your Power, Conquer the Darkness, and Become the Eternal Hero!
     </p>
-    <button>
-      <img
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALgSURBVHgBtZRtSFNRGMefc8923Zublc1gyaxZgoh96YNFSUUTwVYfNCjIiFIpK7AgIpCQFPqgkBkRUX3qU4SkfqgQDMOMrCykF8x0071oQ22pm9u9897TfZkvmyNn0f9y7+Gc+5zf/T/Pc7gA/1mU+NjedHz/0vk/a8fLkTslo8/4skDrTH5L3c7IMoZVKsqNEnNK50gh8rlYnJW/ufvcZMen7MrD6+PFJgwlCHgVHQC7t1jt92nZ2YA7x9pwZqxytOWJ8JqPuEarglLChRAFGpUfPtttdIhNYQM+DwTnZm2XyHtS8qapSvw2rFCSmJQQIEowIoC1mmn4OHCA9gf1LFbweMI9wBvMG+ovklchW9u1XZENeGWnQggSmCJXBOu00/DhSxEdCOhYjHmKn+PQlHNYwe451Dns3t1/97LKFD/jmBmKUClxFBZ0uino6Sui/X4dS1NhGFJbqJv9pVy6s3dLxXnDyKTT+BzkeiviQhEl3xJQHCk5JDn5F/S8s9K9ODd8z3WS38oMYISTKPByRD8OVhI2k/t1C65jnCLZ6QJYuCnRtdCaH1lqqDn6kGz8Oi50UtxGpHgibSTgnlg8FctqITZKBiPJKRYyG0pPhdba00wO20d/qy1EQXsKR2iOAxNG4XXo6V6rU1nTGHLHh1Jyo1BkxISAw7wGHl2pYMxjjqQZrAWFaYobu1qAGZ/R1VAfSNNmeG2dnZLhuXmOIrqmUt6SU9Ghw6KHB+UVTPqoI8mv0vBKQpBFZWCa1d8LS/cNdcHikeKWchTLayqn7LTo4NaxcsbkstPTajW/TWugOiY8F3K72hrnKxULiw8FGejOVMP14rJQ2vAgrU81InWQNJ8whI48bn/BR2A8/EFRUAUilHcTDdUHT81mON0afYpx8Mbg67zbHs9PeCvBCCSgKOiMCjM1xWdJtsvLtTGTeVXd7T0g140kCoyVdBKq12YWROYJ/ZESEYoZ/0q/ARbgBLL0s/+iAAAAAElFTkSuQmCC"
-        alt="Icon Google play"
-        width="20"
-        height="20"
-      /><span>Download Now</span>
-    </button>
+
+    <div class="hero-box-btn">
+      <button class="hero-btn">
+        <picture>
+          <source
+            media="(max-width: 1200px)"
+            srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALgSURBVHgBtZRtSFNRGMefc8923Zublc1gyaxZgoh96YNFSUUTwVYfNCjIiFIpK7AgIpCQFPqgkBkRUX3qU4SkfqgQDMOMrCykF8x0071oQ22pm9u9897TfZkvmyNn0f9y7+Gc+5zf/T/Pc7gA/1mU+NjedHz/0vk/a8fLkTslo8/4skDrTH5L3c7IMoZVKsqNEnNK50gh8rlYnJW/ufvcZMen7MrD6+PFJgwlCHgVHQC7t1jt92nZ2YA7x9pwZqxytOWJ8JqPuEarglLChRAFGpUfPtttdIhNYQM+DwTnZm2XyHtS8qapSvw2rFCSmJQQIEowIoC1mmn4OHCA9gf1LFbweMI9wBvMG+ovklchW9u1XZENeGWnQggSmCJXBOu00/DhSxEdCOhYjHmKn+PQlHNYwe451Dns3t1/97LKFD/jmBmKUClxFBZ0uino6Sui/X4dS1NhGFJbqJv9pVy6s3dLxXnDyKTT+BzkeiviQhEl3xJQHCk5JDn5F/S8s9K9ODd8z3WS38oMYISTKPByRD8OVhI2k/t1C65jnCLZ6QJYuCnRtdCaH1lqqDn6kGz8Oi50UtxGpHgibSTgnlg8FctqITZKBiPJKRYyG0pPhdba00wO20d/qy1EQXsKR2iOAxNG4XXo6V6rU1nTGHLHh1Jyo1BkxISAw7wGHl2pYMxjjqQZrAWFaYobu1qAGZ/R1VAfSNNmeG2dnZLhuXmOIrqmUt6SU9Ghw6KHB+UVTPqoI8mv0vBKQpBFZWCa1d8LS/cNdcHikeKWchTLayqn7LTo4NaxcsbkstPTajW/TWugOiY8F3K72hrnKxULiw8FGejOVMP14rJQ2vAgrU81InWQNJ8whI48bn/BR2A8/EFRUAUilHcTDdUHT81mON0afYpx8Mbg67zbHs9PeCvBCCSgKOiMCjM1xWdJtsvLtTGTeVXd7T0g140kCoyVdBKq12YWROYJ/ZESEYoZ/0q/ARbgBLL0s/+iAAAAAElFTkSuQmCC 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAoCAYAAABjPNNTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAd0SURBVHgB7ZhtbBzFGcefmZ293du9O9vn2I1DCLUU4iKoG9F+aBpBQSgNeXPiBNIUiptWRSWgpChtaaha1QK1DaooFVVFaWklEDSVEK6sFKLSVgkNBickjRq7ie0mde3YMbbv/HJ3vru93Zlh9sW+O4PvzsEGPvBEG+3t7M7+9v/8n2d2DfBxLH6QWb+R2DB8CCEVGGOf2f/lVWtf2NO6bPNNq+KTAyeS3VGjyDWLEqjAcb4lyWPSwDMBvVJCenglG2x/6wcvr/nOY945NiyFDyDmSh+vf/Kl5VYGgiPju6kRNafGe86gipUrDn6b/jVyW1/ruhzARbfAnDdgw/9HSIxizMilyDf8mATTMBXlQ73D4bpQ5tU9iX90rHvhe9fap3rzLBrsnBNLoDGnUrAJksTwxaG7Fc7VtF9Jo9iEYSWjQzd8emdDz9cm3mypa1ir58AiWOAo+PTIuR0CSYASiePz/XcpwLWk6ssQhAkfG7pEfelLjY2tv47dP/TnZg+UwwIXV1FIJP5z7uqAUnz2wh0qZUrKR1JiCEuWSfnbfZ3MUtGPH+RvjG1/7fEGyPp1QWCL+8gDtYNIIvWE4dNdOxTLUpMySTmPgiTxCIkkG+/rLb/6c6tbD/DOri+1NN/gwb5vv5agZK6iyAElhOKT5xpV0/KlPFB7w1jCKD4+ar39vzN19Y3rO/aMvvLKbc8+UAGuDSS4Qr8WfkLPky5D1qMyMcVm4ZOdOxSTCUXlaVBhSM4J8hEe6e+laSO2YU3T/ZGvdPz2p+CqyuEKVC1BSVs/9x/MKIqFopZQ1MTtZ7aqlikUldOQI5SwK5Js4v7ef7GyFTUPf5e3x5o6n70DXFWL3rtkyCype3/s7HMH3D4u1AQiW7jtTKNimUqeotNXSzLBRizBov0XdfmTy1/8VqK95/QvffUwj/5aWElnQ456Xu24ReT85o5HZaGoLJv4+KkG1RSK+vIV9ebh2JD8eCCGjEc7t6+88avyv1nsE0ef+jksgRL6a3FIRzWeVdS+yB1wwT1FZaHoP09uVYyMnJd62xxprEKEhM0/9u4iVXQE0YsqpV30lvvurRmOnK96knPHq3P216KQDgy4yrmKopwxl91RVID6bNATWxXTlD1Fgaex3wE8dGEnDtMxiZIQSIhJBHNu/tdkFYD3AixLDrRV3gNztKyi1Y2mKzunyqf7Ep42hHdcqOmk/mhbg5Ix5SRXAUUkAdhtA0YFYBAwZzOzy5JYdTOMGact31Wf8j/H+Yqu5mbweaqWAOnPJiwLmt87AcFMEU2vTLaiii+DD7+xXR1UqxIvDmyTwhkPcKawc4IBVnziVeayZbEeWvdQ01V/Lx0ScpVE2YLJUxQ8Rb3TnXEAQ/eBWYHgiVufhuBgEvFqIRljUEpQGb2rgIq/YGTrxfud7Zv5itqTcUiqfkhohL71kztT1VY0cPaHd1JrVKWoIgXvJaS4lmVM4YGlhOBVqOvI70O3wqxKL6G6Z8OgvNVn+imQA6hBTJPp6wd2GGWJSX00HAIllCJd+zZzc0S3UDidm0hOKVDmw9h3I0kNnE/dg9DAdTubz5nzgnRJeU6hQH4xzSgIkPT7Ia5jeuyhHelgMqENB8OAqJBOFmt9uUG6927kVsTvgHIKFiOi0a+WpZjFnzjyK63y6pujz0O2BbHSlUQwK625y6ML6qRYACZ0Ql/du80Ixif00ZAAFB5k4vmYU00m4LK0fO6+DTQzqHNUzwldSv52cF8yXFE/sn/jvguWO9vM+p4XBIoqOWvfAUNeQ2PCfypMKYgevrfRCAgFR8srQWLU7c62+u4OYySDqqt9SvrRzRfbmw41fvHrEx3ejBiKfNDNDalpOZ7kea2Hex5M+RWY8mP6UtMWI5iMa5GKJSCJFNvjzCHgPAOcVcqKtEwvj/9nLLJ7ddufWuCocwdpLuVmRwmFA/mN0Um4WOo0HyRCEj3UtC0dSAjAMrEMUzvF3Ekx5WCJXVRfXiX1TsV/ti7eF17d9nILZN8rS/4cLpzumZeKnM1WUABOaYg+t32TEZiK69FwjoIIibKg+PpQORHfa4cfH+u5+/sn2uKQXe7m/a1OijGi6dczcAENXXYAf7dlU1pLZAFFeplQEV2j6lJlOND1dH/HtgfPnuqGrO9K6+ZXAjmzbtuAGoGUDvSp2zcagfikPl5ZZRcJtzjiQVnCNX514tjI0O5drx1v9aYo2XeFoiRPOgoGJEgFMf3F+s1pf2xSGwtXcU6ZJb7CUH2gDHFDeuQ3dKRqV4cDOG/fFYqinkTC/RldAGqcPnbT7YZmK1hVRSXhu1q9jKBUrGV/x+ndf4h0xxcarigk5QlsLzZGUIK0zOkjN29Iq5MT+kTlEh4imhQmvOsv0b4tD5x78wKU2O8WHFIPLeUZoYuhMutHn1+fViYmdFazHK4NBCeHL3fdVddz6oh36oL4rlDM6ckTgx2XQxwSB76wiVQnUoHa2uvYYHLq4dpjz4fXuICLktp5xzevqa89Xrv29Weuv+XgZ2tqNO/wFX/kL0Z8ZP4c/XEsVLwDRgwbWR7vkAEAAAAASUVORK5CYII= 2x"
+            type="image"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="data:image/png;base64,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 1x, /stp_8297/assets/Google_Play_desktop@2x-7191e8f9.png 2x"
+            type="image"
+          />
+          <img
+            class="icon-google-play"
+            src="data:image/png;base64,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"
+            alt="Icon Google play"
+            width="38"
+            height="38"
+            loading="lazy"
+          />
+        </picture>
+
+        <!-- <img
+          src="./assets/img/Google_Play_mobile.png"
+          alt="Icon Google play"
+          width="20"
+          height="20"
+        />-->
+
+        <span class="hero-btn-text">download now</span>
+      </button>
+      <span class="hero-box-btn-text">Begin Your Legendary Journey Today!</span>
+    </div>
   </div>
-  hero
 </section>
 
       <section id="benefits">benefits</section>
