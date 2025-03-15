@@ -64,6 +64,7 @@
   // letter-spacing: 0.02em;
   // @include font(30, 40);
   color: $_legal_color;
+  transition: all 0.3s ease;
 }
 
 .nav-link:hover,
@@ -74,6 +75,8 @@
   color: $_header_link_active;
 }
 .btn-burger {
+  display: flex;
+  align-content: center;
   padding: 0;
   border: none;
   stroke: none;
