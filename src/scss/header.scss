@@ -27,7 +27,11 @@
 
 .header-logo {
   width: 71px;
-  height: 57px;
+  height: 40px;
+  @include media(desktop) {
+    width: 101px;
+    height: 57px;
+  }
 }
 .nav {
   display: none;
