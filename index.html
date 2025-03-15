@@ -26,7 +26,7 @@
     />
     
     <script type="module" crossorigin src="/stp_8297/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp_8297/assets/styles-ceef5016.css">
+    <link rel="stylesheet" href="/stp_8297/assets/styles-f7946a05.css">
   </head>
   <body>
     <header class="header-header">
@@ -113,11 +113,35 @@
 
     <main>
       <section class="hero">
+  <div class="hero-blur"></div>
+
   <div class="hero-container">
     <h1 class="hero-title">Eternal Hero: Action RPG – Forge Your Destiny!</h1>
-    <p class="hero-text">
-      Unleash Your Power, Conquer the Darkness, and Become the Eternal Hero!
-    </p>
+    <div class="hero-content">
+      <p class="hero-text">
+        Unleash Your Power, Conquer the Darkness, and Become the Eternal Hero!
+      </p>
+      <picture>
+        <source
+          media="(max-width: 1200px)"
+          srcset="/stp_8297/assets/pic_mobile-c5b094ab.png 1x, /stp_8297/assets/pic_mobile@2x-00140654.png 2x"
+          type="image"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/stp_8297/assets/pic_desktop-94883a34.png 1x, /stp_8297/assets/pic_desktop@2x-89906e82.png 2x"
+          type="image"
+        />
+        <img
+          class="pic"
+          src="/stp_8297/assets/pic_desktop-94883a34.png"
+          alt="Icon Google play"
+          width="244"
+          height="401"
+          loading="lazy"
+        />
+      </picture>
+    </div>
 
     <div class="hero-box-btn">
       <button class="hero-btn">
@@ -142,17 +166,32 @@
           />
         </picture>
 
-        <!-- <img
-          src="./assets/img/Google_Play_mobile.png"
-          alt="Icon Google play"
-          width="20"
-          height="20"
-        />-->
-
         <span class="hero-btn-text">download now</span>
       </button>
       <span class="hero-box-btn-text">Begin Your Legendary Journey Today!</span>
     </div>
+  </div>
+  <div class="hero-img-position">
+    <picture>
+      <source
+        media="(max-width: 1200px)"
+        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA7CAYAAADB0CKOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAU0SURBVHgB7ZZtiBRlHMD//2eeedmd2d3b3fP2zrurTDpSTy3J80MkaYHQC1QYEkQlfamIoqgPFdQRBH1RIf0qJGalEWVlfjBQK6U4FfK8IzBO0TzvzTt372Z3dt7+PbOdokd5u1p6wvODh112Z56Z3/zfBkAikUgkEolEIpFIJBKJRCK5sWA1BzG4OUCYIkRE7DQdNMQnr+bkGQnRDgXgXt2G0UQIVpoDZvxiKct8Sgd2mA0CyLnsXJsxu+GDOpx3+Ep7TfsUrjfj5e41cF5pmzjtZ86zkdZ+Ht56Xh9rGldZRlEVw9I4JkwNNAS6nXViaXRTN9He3xBX+P+254yT1IoJ78Pk9vd9fzWZIpZJDCgJISZFYZlIECcAFUNoZR9j+dwzZ6xs2HMlwYgZV5PFwLfa9I/AZAEmwBeLmImAcSCxAGOIkGF9gO6oo7DlG3+CvTun23NGSead3jusoJRzvLUQySREx7BE9KIVF9/j4jdEB9K4CfyhNz8JtdKWh/CV8nT7zojGM0HHGjUbVvXaxvPfmHBfRnEhAYqQ/FvQrMgiBOJ7q/IOBIPPHcjk7npNw1u6qtn/RtVk9HDJplOzuesuH+wP1nxu8odLVqBmIjEhaF0iaFYiCJBi34Fvzxuy6udsrFYw4npKVsSO0/f6bFjQro6VOk6c9R7frrP7nQSoCSWkOiEVpWjikhSNBDlGJ58BNdzmx9wvN1jmrq9rvfD/wYV9xawmzEN3nQrmXGYX2t281bGT8Ue6OLXGuIgUBxLdEk0Wik5Kk3UouqeiQJEGRG02QEAEMb4UUv0Ht7C64O1Z5pJ+qIGqJPsGf8hZDY32EPS6C+DJqF3T5Ud8IRrYfGVYTAATkkkCL8v9YhOV3WZm67eddI17dpGytFuhWapKUCdGA2cIGiNQlRDiQjA1GcFoZVgBfh5dQxPhBD5Wvx+Qvwqp0acONWZWvqzhnF+hRqZN185OYM1W04uDg+rdzbBouKT0jKt66ITCBChgTNym58+LlQIlVSjzzFHHa+kpUvMfnpYeAUVjcQVMMdx4jCgpxNSKoJh1FUGqCCZF5BIiLVNYghK8C/ucb6HeXWEb2S7LYMfBc8tjaWvZuqsRrEYS33rv+J2f/Wg/sWeC2klMHJF9EFL0SZXTo4bAFAZcpJ6i+cA1BqiJE3WEpKYCGqJp6CyKHEZS2kXBAOIiik2oANIpcMrroaDugaZgpf3s+P5tWjLR0+W/sU7TdygN9uZ1h/Kf1lSHl0lMdwDRMW2goG94dH3PSx0PLALPCyEIfAjDyQ2iSSsWiseFqljifauyhCQTC40o1lgRi4v/67SoYwZQcE6AV9gNnI5QTEdcCKsGlvirv+L1we7iOO6z6o364bOnt2r62J+K0fJ6rXVYk2REifqeXrx271bHcUG1dDCzCbJySUhlLUik4iBeKEUxcpGSwlabFFXFy6WoL3JDoAJBOR9C2RkAn/WhkRyCuXUsfNCYP7xQaTvC4niAZ9UD+cFCV2PjYvvCdUft7hdIg6NZdeFBuAaqkhwt97bHkDpQjYs4uGlwgtREGbIjRZY+W6R0wfZT+WJoljyuBSIjERmPcUaWkM3GFXeWBm7OoPEE90eE+LDDvDOe6p+Mp+K/i9j2WJAbRkSaet2+iV9yc8xlQ//0338uOZVoLAAc5oPQohkwJCovKZKSRHJGC3QfSIsy16scHQYcNEfEs+SBOp6H0G6BzWXEznDKfVyTyJW42jl56Xm13tzFGQoSiUQikUgkEolEIpFIJBJJlfwFkXT3wmQp54wAAAAASUVORK5CYII= 1x, /stp_8297/assets/arrow_up_mobile@2x-dd9f3b22.png 2x"
+        type="image"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="/stp_8297/assets/arrow_up_desktop-e2221a08.png 1x, /stp_8297/assets/arrow_up_desktop@2x-bbceb9dc.png 2x"
+        type="image"
+      />
+      <img
+        class="arrow_up"
+        src="/stp_8297/assets/arrow_up_desktop-e2221a08.png"
+        alt="Arrow-up"
+        width="109.6"
+        height="220"
+        loading="lazy"
+      />
+    </picture>
   </div>
 </section>
 
