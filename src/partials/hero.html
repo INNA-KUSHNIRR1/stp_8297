@@ -1,17 +1,49 @@
-<section>
-  <div>
-    <h1>Eternal Hero: Action RPG – Forge Your Destiny!</h1>
-    <p>
+<section class="hero">
+  <div class="hero-container">
+    <h1 class="hero-title">Eternal Hero: Action RPG – Forge Your Destiny!</h1>
+    <p class="hero-text">
       Unleash Your Power, Conquer the Darkness, and Become the Eternal Hero!
     </p>
-    <button>
-      <img
-        src="./assets/img/Google_Play_mobile.png"
-        alt="Icon Google play"
-        width="20"
-        height="20"
-      /><span>Download Now</span>
-    </button>
+
+    <div class="hero-box-btn">
+      <button class="hero-btn">
+        <picture>
+          <source
+            media="(max-width: 1200px)"
+            srcset="
+              /assets/img/Google_Play_mobile.png    1x,
+              /assets/img/Google_Play_mobile@2x.png 2x
+            "
+            type="image"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              /assets/img/Google_Play_desktop.png    1x,
+              /assets/img/Google_Play_desktop@2x.png 2x
+            "
+            type="image"
+          />
+          <img
+            class="icon-google-play"
+            src="/assets/img/Google_Play_desktop.png"
+            alt="Icon Google play"
+            width="38"
+            height="38"
+            loading="lazy"
+          />
+        </picture>
+
+        <!-- <img
+          src="./assets/img/Google_Play_mobile.png"
+          alt="Icon Google play"
+          width="20"
+          height="20"
+        />-->
+
+        <span class="hero-btn-text">download now</span>
+      </button>
+      <span class="hero-box-btn-text">Begin Your Legendary Journey Today!</span>
+    </div>
   </div>
-  hero
 </section>
