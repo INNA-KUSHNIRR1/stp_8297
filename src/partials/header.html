@@ -2,49 +2,36 @@
   <div class="header-container">
     <button class="btn-burger">
       <svg width="24" height="24">
+        <!-- <use
+          class="icon-burger"
+
+          href="./assets/icon/sprite.svg#icon-burger"
+
+        ></use> -->
         <use
           class="icon-burger"
-          href="./assets/icon/symbol-defs.svg#icon-burger"
+          href="../img/icon/sprite.svg#icon-burger"
         ></use>
       </svg>
     </button>
 
-    <!-- <picture>
-      <img
-        class="header-logo"
-        srcset="
-          ./assets/img/logo_mobile.png    1x,
-          ./assets/img/logo_mobile@2x.png 2x
-        "
-        src="./assets/img/logo_mobile.png"
-        alt="logo"
-        width="71"
-        height="40.07"
-        loading="lazy"
-        title="logo"
-      />
-    </picture> -->
-
     <picture>
       <source
         media="(max-width: 1200px)"
-        srcset="
-          /assets/img/logo_mobile.png    1x,
-          /assets/img/logo_mobile@2x.png 2x
-        "
+        srcset="../img/img/logo_mobile.png 1x, ../img/img/logo_mobile@2x.png 2x"
         type="image"
       />
       <source
         media="(min-width: 1200px)"
         srcset="
-          /assets/img/logo_desktop1x.png 1x,
-          /assets/img/logo_desktop2x.png 2x
+          ../img/img/logo_desktop1x.png 1x,
+          ../img/img/logo_desktop2x.png 2x
         "
         type="image"
       />
       <img
         class="header-logo"
-        src="/assets/img/logo_desktop1x.png"
+        src="../img/img/logo_desktop1x.png"
         alt="Icon-logo"
         width="101"
         height="57"
