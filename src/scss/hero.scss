@@ -9,7 +9,7 @@
       rgba(57, 57, 57, 0.443866) 51.12%,
       rgba(10, 10, 10, 0.54) 97.14%
     ),
-    url('../assets/img/hero/image_26_mobile_BG.png');
+    url('../img/img/hero/image_26_mobile_BG.png');
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(12px);
@@ -21,7 +21,7 @@
         rgba(57, 57, 57, 0.443866) 51.12%,
         rgba(10, 10, 10, 0.54) 97.14%
       ),
-      url('../assets/img/hero/image_26_mobile_BG@2x.png');
+      url('../img/img/hero/image_26_mobile_BG@2x.png');
   }
 
   @include media(desktop) {
@@ -31,7 +31,7 @@
         rgba(57, 57, 57, 0.443866) 51.12%,
         rgba(10, 10, 10, 0.54) 97.14%
       ),
-      url('../assets/img/hero/hero_desktop_BG.png');
+      url('../img/img/hero/arrow_up_desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(12px);
@@ -43,7 +43,7 @@
           rgba(57, 57, 57, 0.443866) 51.12%,
           rgba(10, 10, 10, 0.54) 97.14%
         ),
-        url('../assets/img/hero/hero_desktop_BG@2x.png');
+        url('../img/img/hero/hero_desktop_BG@2x.png');
     }
   }
 }
