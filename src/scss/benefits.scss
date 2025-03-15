@@ -26,9 +26,10 @@
   }
 }
 .benefits-container {
-  padding: 80px 32px;
+  padding: 24px;
   color: $_text;
   @include media(desktop) {
+    padding: 80px 32px;
     height: 1132px;
     width: 100%;
     max-width: 1200px;

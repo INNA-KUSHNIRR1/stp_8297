@@ -1,9 +1,39 @@
 <section class="hero">
+  <div class="hero-blur"></div>
+
   <div class="hero-container">
     <h1 class="hero-title">Eternal Hero: Action RPG – Forge Your Destiny!</h1>
-    <p class="hero-text">
-      Unleash Your Power, Conquer the Darkness, and Become the Eternal Hero!
-    </p>
+    <div class="hero-content">
+      <p class="hero-text">
+        Unleash Your Power, Conquer the Darkness, and Become the Eternal Hero!
+      </p>
+      <picture>
+        <source
+          media="(max-width: 1200px)"
+          srcset="
+            ./img/img/hero/pic_mobile.png    1x,
+            ./img/img/hero/pic_mobile@2x.png 2x
+          "
+          type="image"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./img/img/hero/pic_desktop.png    1x,
+            ./img/img/hero/pic_desktop@2x.png 2x
+          "
+          type="image"
+        />
+        <img
+          class="pic"
+          src="./img/img/hero/pic_desktop.png"
+          alt="Icon Google play"
+          width="244"
+          height="401"
+          loading="lazy"
+        />
+      </picture>
+    </div>
 
     <div class="hero-box-btn">
       <button class="hero-btn">
@@ -34,16 +64,37 @@
           />
         </picture>
 
-        <!-- <img
-          src="./assets/img/Google_Play_mobile.png"
-          alt="Icon Google play"
-          width="20"
-          height="20"
-        />-->
-
         <span class="hero-btn-text">download now</span>
       </button>
       <span class="hero-box-btn-text">Begin Your Legendary Journey Today!</span>
     </div>
+  </div>
+  <div class="hero-img-position">
+    <picture>
+      <source
+        media="(max-width: 1200px)"
+        srcset="
+          ./img/img/hero/arrow_up_mobile.png    1x,
+          ./img/img/hero/arrow_up_mobile@2x.png 2x
+        "
+        type="image"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./img/img/hero/arrow_up_desktop.png    1x,
+          ./img/img/hero/arrow_up_desktop@2x.png 2x
+        "
+        type="image"
+      />
+      <img
+        class="arrow_up"
+        src="./img/img/hero/arrow_up_desktop.png"
+        alt="Arrow-up"
+        width="109.6"
+        height="220"
+        loading="lazy"
+      />
+    </picture>
   </div>
 </section>
