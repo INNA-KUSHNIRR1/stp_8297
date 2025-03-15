@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="./scss/styles.scss" />
   </head>
   <body>
-    <header class="header">
+    <header class="legal-header">
       <a class="home-link" href="./index.html">
-        <svg class="legal-icon" height="24" width="12">
+        <svg class="legal-icon">
           <use
             class="icon-arrow"
-            href="assets/icon/symbol-defs.svg#icon-arrow"
+            href="./assets/icon/symbol-defs.svg#icon-arrow"
           ></use>
         </svg>
         Back
@@ -27,7 +27,7 @@
     </header>
     <main>
       <div class="legal-section-container">
-        <div class="container">
+        <div class="legal-container">
           <div class="legal-section-title">
             <h1 class="section-title legal-section-main-title">
               Privacy Policy
@@ -204,15 +204,23 @@
         </div>
       </div>
     </main>
-    <footer class="footer section-padding">
+    <footer class="footer">
       <div class="container footer-container">
-        <div class="legal-links">
-          <a class="legal-link" href="./privacy-policy.html">Privacy Policy</a>
-          <a class="legal-link" href="./terms-conditions.html"
-            >Terms and Conditions</a
-          >
-          <a class="legal-link" href="./cookies-policy.html">Cookie Policy</a>
-        </div>
+        <ul class="legal-links">
+          <li class="legal-link-item">
+            <a class="legal-link" href="./privacy-policy.html"
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="legal-link-item">
+            <a class="legal-link" href="./terms-conditions.html"
+              >Terms and Conditions</a
+            >
+          </li>
+          <li class="legal-link-item">
+            <a class="legal-link" href="./cookies-policy.html">Cookie Policy</a>
+          </li>
+        </ul>
         <div class="legal-text">
           <p class="legal-text">All rights reserved epiclightplay.com | 2025</p>
         </div>
