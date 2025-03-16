@@ -2,6 +2,10 @@
   width: 100%;
   background: $_benefits_background;
   overflow: hidden;
+  @include media(desktop) {
+    position: relative;
+    scroll-margin-top: 113px;
+  }
 }
 .benefits-bg {
   background-image: url('../img/img/benefits/Benefits_BG_mobile.png');

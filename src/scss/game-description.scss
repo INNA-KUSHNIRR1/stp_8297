@@ -4,6 +4,7 @@
   color: $_game_description_text;
   @include media(desktop) {
     background: $_game_description_background_desktop;
+    scroll-margin-top: 113px;
   }
 }
 .game-description-bg {
@@ -31,7 +32,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    // height: 584;
+
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 129px;
