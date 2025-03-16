@@ -2,8 +2,8 @@
   width: 100%;
   background: $_benefits_background;
   overflow: hidden;
+  scroll-margin-top: 65px;
   @include media(desktop) {
-    position: relative;
     scroll-margin-top: 113px;
   }
 }
