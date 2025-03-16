@@ -143,6 +143,10 @@ main {
   }
 
   &:active {
+    color: $_legal_accent_color;
+  }
+
+  &:visited {
     color: $_legal_visited_color;
   }
 }
