@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Checking if a value is set in localStorage
   const cookiesAccepted = localStorage.getItem('cookiesAccepted');
 
-  if (cookiesAccepted !== 'true' && cookiesAccepted !== 'false') {
+  if (cookiesAccepted === 'true' || cookiesAccepted === 'false') {
+    modalCookies.style.display = 'none';
+  } else {
     modalCookies.style.display = 'flex';
     cookieBox.classList.add('show'); // Adding a class to show the modal
     document.body.style.overflow = 'hidden'; // Blocking scrolling
@@ -18,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cookieBox.classList.remove('show');
     document.body.style.overflow = ''; // Unblocking scrolling
     setTimeout(() => {
-      document.querySelector('.modal-cookies').style.display = 'none';
+      modalCookies.style.display = 'none';
     }, 300);
   };
 
