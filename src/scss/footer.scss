@@ -42,6 +42,28 @@
   }
 }
 
+.legal-link {
+  text-decoration: none;
+  color: $_legal_color;
+  transition: color 0.3s ease;
+
+  @include media(desktop) {
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+
+    &:hover,
+    &:focus {
+      color: $_legal_accent_color;
+    }
+
+    &:active {
+      color: $_legal_visited_color;
+    }
+  }
+}
+
 .legal-text {
   font-family: Fredoka, sans-serif;
   font-weight: 400;
