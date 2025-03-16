@@ -1,6 +1,5 @@
 .main-characters {
   width: 100%;
-
   color: $_main_characters_text;
   background: $_main_characters_background_mobile;
 
@@ -30,51 +29,91 @@
   }
 }
 .main-characters-container {
-  padding: 24px;
+  padding: 24px 24px 0 24px;
+  @include media(desktop) {
+    padding: 80px 19px;
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 .main-characters-title {
-  padding-bottom: 16px;
-
+  margin-bottom: 16px;
   font-family: Fredoka, sans-serif;
   font-weight: 700;
   font-size: 24.2px;
   line-height: 36px;
   letter-spacing: 0;
   text-align: center;
+  @include media(desktop) {
+    margin-bottom: 40px;
+    font-size: 45px;
+  }
 }
 .main-characters-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-
   text-align: center;
+
+  @include media(desktop) {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    row-gap: 47px;
+    justify-content: space-evenly;
+  }
+}
+.main-characters-list li {
+  margin-top: -21px;
+  @include media(desktop) {
+    margin-top: 0;
+  }
+}
+.main-characters-list li:first-child {
+  margin-top: 0;
 }
 .main-characters-item {
-  display: flex;
-  flex-direction: column;
+  width: 253px;
+  height: 135px;
+  padding: 16px 56px 16px 56px;
+
+  background-image: url('../img/img/main_characters_description/two-blank-banners-medieval-style_mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/img/main_characters_description/two-blank-banners-medieval-style_mobile@2x.png');
+  }
+  @include media(desktop) {
+    align-content: center;
+    width: 387px;
+    height: 207px;
+    padding: 14px 69px 34px 69px;
+    background-image: url('../img/img/main_characters_description/two-blank-banners-medieval-style_desktop.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/img/main_characters_description/two-blank-banners-medieval-style_desktop@2x.png');
+    }
+  }
 }
 
 .main-characters-item-text {
-  min-width: 253px;
-  min-height: 135px;
-  padding: 16px 56px 16px 56px;
+  display: flex;
+  flex-direction: column;
 
-  background-image: url(../img/img/main_characters_description/two-blank-banners-medieval-style_mobile.png);
-
-  background-position: center;
-  background-size: auto;
-  background-repeat: no-repeat;
+  @include media(desktop) {
+    gap: 4px;
+    width: 250px;
+  }
 }
 .main-characters-item-title {
-  padding-top: 20px;
-
   font-family: Fredoka, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0;
+  @include media(desktop) {
+    font-size: 24px;
+  }
 }
 .main-characters-item-description {
   font-family: Open Sans, sans-serif;
@@ -82,4 +121,7 @@
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0;
+  @include media(desktop) {
+    font-size: 16px;
+  }
 }
