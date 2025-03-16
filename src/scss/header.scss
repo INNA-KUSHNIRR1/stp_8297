@@ -116,3 +116,43 @@
     }
   }
 }
+
+//scss for menu
+
+.burger-backdrop {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #12121266;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 700ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.burger-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+.burger-menu {
+  width: 100vw;
+  height: 100vh;
+  padding: 24px 24px 16px 24px;
+}
+.burger-menu.is-open {
+  transform: translateX(0);
+  visibility: visible;
+  overflow-y: hidden;
+}
+.menu-btn {
+}
+.menu-list {
+}
+.menu-item {
+}
+.menu-link {
+}

@@ -96,9 +96,7 @@
   color: $_hero_text;
   max-width: 128px;
   margin-bottom: 78px;
-  // height: 120;
-  // top: 202px;
-  // left: 464px;
+
   @include media(desktop) {
     font-size: 20px;
     max-width: 455px;
@@ -132,7 +130,6 @@
   transition: all 0.3s ease;
 
   @include media(desktop) {
-    // margin: 0;
     width: 100%;
     padding: 16px 30px;
     gap: 26px;
@@ -182,25 +179,16 @@
 
 .arrow_up {
   position: absolute;
-  width: 27.1px;
-  height: 54.05px;
-  // top: 299px;
-  // left: 115.91px;
-  left: 0;
-  bottom: 0;
-  transform: rotate(41.28deg);
+  width: 26.67px;
+  height: 11px;
+  left: 139px;
+  bottom: 170px;
 
   @include media(desktop) {
-    // width: 220px;
-    // height: 109.6px;
-    width: 109.6px;
-    height: 220px;
-    // top: 173.62px;
-    // left: 701.15px;
-    left: 0;
-    bottom: 0;
-
-    transform: rotate(41.28deg);
+    width: 155px;
+    height: 63.92px;
+    bottom: 153px;
+    left: 576px;
   }
 }
 .pic {

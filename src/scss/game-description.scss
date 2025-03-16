@@ -118,6 +118,7 @@
   color: $_game_description_text;
   @include media(desktop) {
     font-size: 24px;
+    margin-bottom: 16px;
   }
 }
 .game-description-content-text {
