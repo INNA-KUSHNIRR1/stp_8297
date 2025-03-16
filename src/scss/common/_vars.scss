@@ -31,6 +31,19 @@ $_game_description_background_desktop: linear-gradient(
   #f1c25e 100%
 );
 
+$_main_characters_text: #3b242a;
+$_main_characters_background_mobile: linear-gradient(
+  180deg,
+  #f8b857 0%,
+  #cf9928 100%
+);
+$_main_characters_background_desktop: linear-gradient(
+  180deg,
+  #f1c25e 12.64%,
+  #bc9137 37.5%,
+  #b58a32 100%
+);
+
 $_legal_color: #ffff;
 $_legal_title_color: #ffdc18;
 $_legal_bg_color: #11171c;
