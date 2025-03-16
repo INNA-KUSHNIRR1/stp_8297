@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   width: 100%;
+  overflow: hidden;
 
   background-image: linear-gradient(
       273.73deg,
@@ -54,7 +55,6 @@
   height: 100%;
   backdrop-filter: blur(12px);
   z-index: -1;
-  // background: rgba(0, 0, 0, 0.3); // Затемнение, если нужно
 }
 
 .hero-container {
@@ -73,22 +73,18 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 150%;
-  // letter-spacing: 0%;
   text-align: left;
-  color: #fbeeb9;
+  color: $_hero_title;
   max-width: 271px;
   height: 100%;
   margin-bottom: 8px;
-  // overflow-wrap: break-word;
-  // white-space: normal;
-  // word-wrap: break-word;
-  // height: 108;
-  // top: 86px;
-  // left: 464px;
+  text-align: center;
+
   @include media(desktop) {
     font-size: 48px;
     max-width: 785px;
     margin-bottom: 16px;
+    text-align: left;
   }
 }
 .hero-text {
@@ -97,7 +93,7 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0%;
-  color: #fcf9ec;
+  color: $_hero_text;
   max-width: 128px;
   margin-bottom: 78px;
   // height: 120;
@@ -131,8 +127,8 @@
   padding: 9px 18px;
 
   border-radius: 8.42px;
-  color: #414141;
-  background-color: #ffffff;
+  color: $_hero_btn_text;
+  background-color: $_hero_btn_bg;
   transition: all 0.3s ease;
 
   @include media(desktop) {
@@ -144,12 +140,12 @@
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #efbf5d;
-  color: #3b242a;
+  background-color: $_hero_btn_bg_hover;
+  color: $_hero_btn_text_hover_active;
 }
 .hero-btn:active {
-  background-color: #ffe0a1;
-  color: #3b242a;
+  background-color: $_hero_btn_bg_active;
+  color: $_hero_btn_text_hover_active;
 }
 
 .hero-btn-text {
@@ -170,7 +166,7 @@
   font-size: 12px;
   line-height: 150%;
   letter-spacing: 0%;
-  color: #fcf9ec;
+  color: $_hero_text;
   @include media(desktop) {
     font-size: 20px;
   }
@@ -186,31 +182,59 @@
 
 .arrow_up {
   position: absolute;
-  width: 54.05px;
-  height: 27.1px;
-  top: 299px;
-  left: 115.91px;
-
-  transform: rotate(-41.28deg);
+  width: 27.1px;
+  height: 54.05px;
+  // top: 299px;
+  // left: 115.91px;
+  left: 0;
+  bottom: 0;
+  transform: rotate(41.28deg);
 
   @include media(desktop) {
+    // width: 220px;
+    // height: 109.6px;
     width: 109.6px;
     height: 220px;
-    top: 286.62px;
-    left: 701.15px;
-    transform: rotate(-41.28deg);
+    // top: 173.62px;
+    // left: 701.15px;
+    left: 0;
+    bottom: 0;
+
+    transform: rotate(41.28deg);
   }
 }
 .pic {
+  position: absolute;
   margin-top: 7px;
-  // position: absolute;
   width: 93.46px;
   height: 153.59px;
-  // left: 121.78px;
-  // bottom: 100.04px;
+  right: 43px;
+  bottom: 100.04px;
+  margin: 0;
+  border: 4px solid #ffffff;
+  border-radius: 6px;
+  transform: rotate(18deg);
+
   @include media(desktop) {
+    border-radius: 16px;
+    border: 6px solid #ffffff;
+
     width: 244px;
     height: 401px;
+    transform: rotate(18deg);
+
+    bottom: -55px;
+    right: 106.74px;
+
+    // box-shadow: 8px 11px 29px 0px #000000c9;
+
+    // box-shadow: 33px 42px 54px 0px #000000ad;
+
+    // box-shadow: 74px 95px 72px 0px #00000066;
+
+    // box-shadow: 131px 170px 86px 0px #0000001f;
+
+    // box-shadow: 205px 265px 94px 0px #00000003;
   }
 }
 .hero-content {

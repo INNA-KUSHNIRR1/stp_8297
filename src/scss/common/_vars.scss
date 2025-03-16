@@ -1,13 +1,35 @@
 $_main_color: #242424;
 $_main_bg_color: rgba(255, 255, 255, 0.87);
+
 $_header_color: #747bff;
 $_header_accent_color: red;
 $_header_bg: #0e0e0e;
 $_header_link_hover: #efc05d;
 $_header_link_active: #fbeeb9;
 
-$_text: #3b242a;
-$_background: #3b242a;
+$_hero_title: #fbeeb9;
+$_hero_text: #fcf9ec;
+$_hero_btn_bg: #ffffff;
+$_hero_btn_bg_hover: #efbf5d;
+$_hero_btn_bg_active: #ffe0a1;
+$_hero_btn_text: #414141;
+$_hero_btn_text_hover_active: #3b242a;
+
+$_benefits_background: linear-gradient(180deg, #f1c25e 0%, #b58a32 100%);
+$_benefits_brown: #3b242a;
+
+$_game_description_text: #3b242a;
+$_game_description_background_mobile: linear-gradient(
+  180deg,
+  #b58a32 0%,
+  #f1c25e 100%
+);
+$_game_description_background_desktop: linear-gradient(
+  180deg,
+  #b58a32 0%,
+  #bc9137 37.5%,
+  #f1c25e 100%
+);
 
 $_legal_color: #ffff;
 $_legal_title_color: #ffdc18;

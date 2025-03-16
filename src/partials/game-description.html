@@ -1,1 +1,58 @@
-<section id="game-description">Game Description</section>
+<section id="game-description" class="game-description">
+  <div class="game-description-bg">
+    <div class="game-description-container">
+      <h2 class="game-description-title">game description</h2>
+      <div class="game-description-content">
+        <div class="game-description-img-box">
+          <div class="game-description-wrapper-img"></div>
+          <picture>
+            <source
+              media="(max-width: 1200px)"
+              srcset="
+                ./img/img/game_description/pic_mobile.png    1x,
+                ./img/img/game_description/pic_mobile@2x.png 2x
+              "
+              type="image"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./img/img/game_description/pic_desktop.png    1x,
+                ./img/img/game_description/pic_desktop@2x.png 2x
+              "
+              type="image"
+            />
+            <img
+              class="game-description-img"
+              src="./img/img/game_description/pic_desktop.png"
+              alt="pic"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+
+        <div class="game-description-content-box">
+          <h3 class="game-description-content-title">eternal hero</h3>
+          <p class="game-description-content-text">
+            <span class="game-description-span">Action RPG</span>
+            is a thrilling adventure where your destiny is in your hands.
+            <br />
+            Step into the
+            <span class="game-description-span">World of Eternals</span> , a
+            land filled with magic, danger, and legendary heroes. <br />
+            Wield <span class="game-description-span">powerful weapons</span> ,
+            master <span class="game-description-span">arcane spells</span> ,
+            and forge your own combat style. <br />
+            Every battle strengthens you, every decision shapes your future.
+            <br />
+            Will you become the light that saves the realm or embrace the
+            darkness within? <br />
+            Your
+            <span class="game-description-span">legendary quest</span> begins
+            now!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

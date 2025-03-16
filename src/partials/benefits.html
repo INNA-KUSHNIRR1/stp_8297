@@ -248,6 +248,32 @@
           </div>
         </li>
       </ul>
+      <picture>
+        <source
+          media="(max-width: 1200px)"
+          srcset="
+            ./img/img/benefits/dragon_mobile.png    1x,
+            ./img/img/benefits/dragon_mobile@2x.png 2x
+          "
+          type="image"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./img/img/benefits/Dragon_pic_desktop.png    1x,
+            ./img/img/benefits/Dragon_pic_desktop@2x.png 2x
+          "
+          type="image"
+        />
+        <img
+          class="benefits-dragon"
+          src="./img/img/benefits/Dragon_pic_desktop.png"
+          alt="Dragon"
+          width="383"
+          height="264"
+          loading="lazy"
+        />
+      </picture>
     </div>
   </div>
 </section>
