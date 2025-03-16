@@ -1,16 +1,85 @@
+.main-characters {
+  width: 100%;
+
+  color: $_main_characters_text;
+  background: $_main_characters_background_mobile;
+
+  @include media(desktop) {
+    background: $_main_characters_background_desktop;
+    scroll-margin-top: 113px;
+  }
+}
+
 .main-characters-bg {
+  background-image: url('../img/img/main_characters_description/Main\ Characters\ Description_BG_mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/img/main_characters_description/Main\ Characters\ Description_BG_mobile@2x.png');
+  }
+
+  @include media(desktop) {
+    background-image: url('../img/img/main_characters_description/Main\ Characters\ Description_BG_desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/img/main_characters_description/Main\ Characters\ Description_BG_desktop@2x.png');
+    }
+  }
 }
 .main-characters-container {
+  padding: 24px;
 }
 .main-characters-title {
+  padding-bottom: 16px;
+
+  font-family: Fredoka, sans-serif;
+  font-weight: 700;
+  font-size: 24.2px;
+  line-height: 36px;
+  letter-spacing: 0;
+  text-align: center;
 }
 .main-characters-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  text-align: center;
 }
 .main-characters-item {
+  display: flex;
+  flex-direction: column;
 }
+
 .main-characters-item-text {
+  min-width: 253px;
+  min-height: 135px;
+  padding: 16px 56px 16px 56px;
+
+  background-image: url(../img/img/main_characters_description/two-blank-banners-medieval-style_mobile.png);
+
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 .main-characters-item-title {
+  padding-top: 20px;
+
+  font-family: Fredoka, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
 }
 .main-characters-item-description {
+  font-family: Open Sans, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0;
 }
