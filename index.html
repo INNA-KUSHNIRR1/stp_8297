@@ -26,7 +26,9 @@
     />
     
     <script type="module" crossorigin src="/stp_8297/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp_8297/assets/styles-b9eaa71c.css">
+    <link rel="modulepreload" crossorigin href="/stp_8297/assets/vendor-abfa2f4e.js">
+    <link rel="stylesheet" href="/stp_8297/assets/vendor-523ba882.css">
+    <link rel="stylesheet" href="/stp_8297/assets/styles-935ada11.css">
   </head>
   <body>
     <header class="header-header">
@@ -493,7 +495,229 @@
   </div>
 </section>
 
-      <section id="gallery">gallery</section>
+      <section id="gallery" class="gallery">
+  <div class="gallery-bg">
+    <div class="gallery-container">
+      <h2 class="gallery-title">Gallery</h2>
+      <!-- Gallery swiper -->
+      <div class="swiper gallery-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="/stp_8297/assets/image_25_mobile-320b069a.png 1x, /stp_8297/assets/image_25_mobile@2x-cbcb6b7d.png 2x"
+                media="(max-width: 1199px)"
+              />
+              <source
+                srcset="/stp_8297/assets/image_25_desktop-fc9b080e.png 1x, /stp_8297/assets/image_25_desktop@2x-521631c1.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="/stp_8297/assets/image_25_mobile-320b069a.png"
+                alt="Game picture 1"
+                class="gallery-img"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="/stp_8297/assets/image_23_mobile-323422b5.png 1x, /stp_8297/assets/image_23_mobile@2x-38db6f36.png 2x"
+                media="(max-width: 1199px)"
+              />
+              <source
+                srcset="/stp_8297/assets/image_23_desktop-d6c85416.png 1x, /stp_8297/assets/image_23_desktop@2x-1b9a1a8f.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="/stp_8297/assets/image_23_mobile-323422b5.png"
+                alt="Game picture 2"
+                class="gallery-img"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="/stp_8297/assets/image_20_mobile-457e4285.png 1x, /stp_8297/assets/image_20_mobile@2x-9017a5d7.png 2x"
+                media="(max-width: 1199px)"
+              />
+              <source
+                srcset="/stp_8297/assets/image_20_desktop-d6107946.png 1x, /stp_8297/assets/image_20_desktop@2x-3355e17e.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="/stp_8297/assets/image_20_mobile-457e4285.png"
+                alt="Game picture 3"
+                class="gallery-img"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="/stp_8297/assets/image_24_mobile-a1d080f5.png 1x, /stp_8297/assets/image_24_mobile@2x-7c5ad7dd.png 2x"
+                media="(max-width: 1199px)"
+              />
+              <source
+                srcset="/stp_8297/assets/image_24_desktop-e0726d37.png 1x, /stp_8297/assets/image_24_desktop@2x-25228824.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="/stp_8297/assets/image_24_mobile-a1d080f5.png"
+                alt="Game picture 4"
+                class="gallery-img"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="/stp_8297/assets/image_22_mobile-ef133ea7.png 1x, /stp_8297/assets/image_22_mobile@2x-a8742663.png 2x"
+                media="(max-width: 1199px)"
+              />
+              <source
+                srcset="/stp_8297/assets/image_22_desktop-bb3de621.png 1x, /stp_8297/assets/image_22_desktop@2x-f1b43cd1.png 2x"
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="/stp_8297/assets/image_22_mobile-ef133ea7.png"
+                alt="Game picture 5"
+                class="gallery-img"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-bullet"></div>
+        <div class="sword"></div>
+      </div>
+
+      <!-- Gallery static -->
+      <!-- <div class="gallery-static">
+        <div class="gallery-static-wrapper">
+          <div class="gallery-static-slide">
+            <picture>
+              <source
+                srcset="
+                  ./img/img/gallery/image_25_mobile.png    1x,
+                  ./img/img/gallery/image_25_mobile@2x.png 2x
+                "
+                media="(max-width: 1199px)"
+              />
+              <source
+                srcset="
+                  ./img/img/gallery/image_25_desktop.png    1x,
+                  ./img/img/gallery/image_25_desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="./img/img/gallery/image_25_mobile.png"
+                alt="Game picture 1"
+                class="gallery-static-img"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  ./img/img/gallery/image_23_mobile.png    1x,
+                  ./img/img/gallery/image_23_mobile@2x.png 2x
+                "
+                media="(max-width: 1199px)"
+              />
+              <source
+                srcset="
+                  ./img/img/gallery/image_23_desktop.png    1x,
+                  ./img/img/gallery/image_23_desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="./img/img/gallery/image_23_mobile.png"
+                alt="Game picture 2"
+                class="gallery-static-img"
+              />
+            </picture>
+          </div>
+          <div class="gallery-static-slide">
+            <picture>
+              <source
+                srcset="
+                  ./img/img/gallery/image_20_mobile.png    1x,
+                  ./img/img/gallery/image_20_mobile@2x.png 2x
+                "
+                media="(max-width: 1199px)"
+              />
+              <source
+                srcset="
+                  ./img/img/gallery/image_20_desktop.png    1x,
+                  ./img/img/gallery/image_20_desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="./img/img/gallery/image_20_mobile.png"
+                alt="Game picture 3"
+                class="gallery-static-img"
+              />
+            </picture>
+          </div>
+          <div class="gallery-static-slide">
+            <picture>
+              <source
+                srcset="
+                  ./img/img/gallery/image_24_mobile.png    1x,
+                  ./img/img/gallery/image_24_mobile@2x.png 2x
+                "
+                media="(max-width: 1199px)"
+              />
+              <source
+                srcset="
+                  ./img/img/gallery/image_24_desktop.png    1x,
+                  ./img/img/gallery/image_24_desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="./img/img/gallery/image_24_mobile.png"
+                alt="Game picture 4"
+                class="gallery-static-img"
+              />
+            </picture>
+          </div>
+          <div class="gallery-static-slide">
+            <picture>
+              <source
+                srcset="
+                  ./img/img/gallery/image_22_mobile.png    1x,
+                  ./img/img/gallery/image_22_mobile@2x.png 2x
+                "
+                media="(max-width: 1199px)"
+              />
+              <source
+                srcset="
+                  ./img/img/gallery/image_22_desktop.png    1x,
+                  ./img/img/gallery/image_22_desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="./img/img/gallery/image_22_mobile.png"
+                alt="Game picture 5"
+                class="gallery-static-img"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+    </div>
+  </div>
+</section>
 
       <section class="key-features" id="key-features">
   <div class="key-features-bg">
