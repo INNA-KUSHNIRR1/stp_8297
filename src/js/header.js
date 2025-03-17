@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Close menu
   closeButton.addEventListener('click', function () {
     menuBackdrop.classList.remove('is-open');
-    menu.classList.remove('is-open'); // Удаляем класс у меню
+    menu.classList.remove('is-open'); //Removing the class from the menu
   });
 
   items.forEach(item => {
