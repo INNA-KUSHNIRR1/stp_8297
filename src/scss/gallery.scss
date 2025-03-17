@@ -1,0 +1,118 @@
+.gallery {
+  width: 100%;
+  background: linear-gradient(180deg, #f1c25e 0%, #ddb362 90.49%);
+  overflow: hidden;
+  @include media(desktop) {
+    background: linear-gradient(
+      180deg,
+      #f1c25e 2.75%,
+      #eabb59 32%,
+      #bc9137 72.5%,
+      #b58a32 100%
+    );
+
+    scroll-margin-top: 113px;
+  }
+}
+.gallery-bg {
+  background-image: none;
+
+  @include media(desktop) {
+    background-image: url('../img/img/gallery/Gallery_BG_desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/img/gallery/Gallery_BG_desktop@2x.png');
+    }
+  }
+}
+
+.gallery-bg {
+}
+.gallery-container {
+}
+.gallery-title {
+  padding-bottom: 16px;
+
+  font-family: Fredoka, sans-serif;
+  font-weight: 700;
+  font-size: 24.2px;
+  line-height: 36px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #3b242a;
+
+  @include media(desktop) {
+    font-size: 45px;
+    line-height: 68px;
+  }
+}
+.swiper {
+}
+.gallery-swiper {
+  max-width: 296px;
+  margin: 0 auto;
+
+  display: block;
+
+  @include media(desktop) {
+    max-width: none;
+
+    display: none;
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+.swiper-wrapper {
+  padding-bottom: 20px;
+}
+.swiper-slide {
+}
+.gallery-img {
+}
+.swiper-pagination {
+  bottom: 10px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(59, 36, 42, 0.5) !important;
+  margin: 0 5px;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  width: 13px;
+  height: 13px;
+  background-color: #3b242a !important;
+}
+.sword {
+}
+.gallery-static {
+}
+.gallery-static-wrapper {
+  display: none;
+  position: relative;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+
+  @include media(desktop) {
+    display: block;
+    visibility: visible;
+    width: auto;
+    height: auto;
+  }
+}
+.gallery-static-slide {
+}
+.gallery-static-img {
+}
