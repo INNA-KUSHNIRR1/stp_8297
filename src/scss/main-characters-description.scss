@@ -1,10 +1,14 @@
 .main-characters {
   width: 100%;
+
   color: $_main_characters_text;
   background: $_main_characters_background_mobile;
+
   scroll-margin-top: 65px;
+
   @include media(desktop) {
     background: $_main_characters_background_desktop;
+
     scroll-margin-top: 113px;
   }
 }
@@ -28,27 +32,34 @@
     }
   }
 }
+
 .main-characters-container {
   padding: 24px 24px 0 24px;
+
   @include media(desktop) {
     padding: 80px 19px;
     width: 1200px;
     margin: 0 auto;
   }
 }
+
 .main-characters-title {
   margin-bottom: 16px;
+
   font-family: Fredoka, sans-serif;
   font-weight: 700;
   font-size: 24.2px;
   line-height: 36px;
   letter-spacing: 0;
   text-align: center;
+
   @include media(desktop) {
     margin-bottom: 40px;
+
     font-size: 45px;
   }
 }
+
 .main-characters-list {
   display: flex;
   flex-direction: column;
@@ -63,15 +74,19 @@
     justify-content: space-evenly;
   }
 }
+
 .main-characters-list li {
   margin-top: -21px;
+
   @include media(desktop) {
     margin-top: 0;
   }
 }
+
 .main-characters-list li:first-child {
   margin-top: 0;
 }
+
 .main-characters-item {
   width: 253px;
   height: 135px;
@@ -80,9 +95,11 @@
   background-image: url('../img/img/main_characters_description/two-blank-banners-medieval-style_mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
+
   @media (min-resolution: 2dppx) {
     background-image: url('../img/img/main_characters_description/two-blank-banners-medieval-style_mobile@2x.png');
   }
+
   @include media(desktop) {
     align-content: center;
     width: 387px;
@@ -111,16 +128,19 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0;
+
   @include media(desktop) {
     font-size: 24px;
   }
 }
+
 .main-characters-item-description {
   font-family: Open Sans, sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0;
+
   @include media(desktop) {
     font-size: 16px;
   }

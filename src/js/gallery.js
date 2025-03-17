@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 const swiper = new Swiper('.gallery-swiper', {
   modules: [Pagination, Navigation],
   direction: 'horizontal',
-  loop: true,
+  // loop: true,
   slidesPerView: 2,
   spaceBetween: 20,
 
