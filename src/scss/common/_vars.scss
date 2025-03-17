@@ -32,6 +32,18 @@ $_game_description_background_desktop: linear-gradient(
   #f1c25e 100%
 );
 
+$_gallery_bg_mobil: linear-gradient(180deg, #f1c25e 0%, #ddb362 90.49%);
+$_gallery_bg_desktop: linear-gradient(
+  180deg,
+  #f1c25e 2.75%,
+  #eabb59 32%,
+  #bc9137 72.5%,
+  #b58a32 100%
+);
+$_gallery_title_color: #3b242a;
+$_gallery_bullet_bg_color: #3b242a80;
+$_gallery_bullet_active_bg_color: #3b242a;
+
 $_key_features_bg_number: #3b242a;
 $_key_features_number: #ffffff;
 
