@@ -12,6 +12,7 @@
   background-image: url('../img/img/game_description/Game Description_BG_mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   @media (min-resolution: 2dppx) {
     background-image: url('../img/img/game_description/Game Description_BG_mobile@2x.png');
@@ -21,6 +22,7 @@
     background-image: url('../img/img/game_description/Game Description_BG_desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     @media (min-resolution: 2dppx) {
       background-image: url('../img/img/game_description/Game Description_BG_desktop@2x.png');
@@ -29,10 +31,11 @@
 }
 .game-description-container {
   padding: 24.2px;
+  max-width: 320px;
+  margin: 0 auto;
   @include media(desktop) {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
 
     padding-top: 80px;
     padding-bottom: 80px;
@@ -61,7 +64,7 @@
 .game-description-wrapper-img {
   // position: relative;
   // overflow: visible;
-  width: 247.8px;
+  max-width: 247.8px;
   height: 166.1px;
   // top: 18.21px;
   border-radius: 9.46px;

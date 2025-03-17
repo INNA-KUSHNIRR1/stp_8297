@@ -59,14 +59,19 @@
 }
 
 .hero-container {
+  position: relative;
   padding: 85px 24px 16px 24px;
   margin: 0 auto;
+  max-width: 320px;
 
   @include media(desktop) {
     padding: 170px 128px 72px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 .hero-title {

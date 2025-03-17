@@ -22,12 +22,13 @@
 .key-features-container {
   padding: 24.2px;
   color: $_key_features_text;
+  max-width: 320px;
+  margin: 0 auto;
   @include media(desktop) {
     padding: 80px 178px 80px 420px;
     height: 1122px;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
   }
 }
 

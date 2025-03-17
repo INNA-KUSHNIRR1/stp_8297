@@ -1,0 +1,73 @@
+.reviews {
+  width: 100%;
+  background: $_reviews_bg_mobile;
+  @include media(desktop) {
+    background: $_reviews_bg_desktop;
+  }
+}
+
+.reviews-bg {
+  background-image: url('../img/img/reviews/Reviews_BG_mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/img/reviews/Reviews_BG_mobile@2x.png');
+  }
+
+  @include media(desktop) {
+    background-image: url('../img/img/reviews/Reviews_BG_desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-attachment: scroll;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/img/reviews/Reviews_BG_desktop@2x.png');
+    }
+  }
+}
+.reviews-container {
+  padding: 24px;
+  max-width: 320px;
+  margin: 0 auto;
+  @include media(desktop) {
+    width: 100%;
+    // height: 100%;
+    // max-height: 948px;
+    max-width: 1200px;
+    padding: 80px 112px 183.77px 117px;
+  }
+}
+.reviews-title {
+  @include media(desktop) {
+  }
+}
+.reviews-list {
+  @include media(desktop) {
+  }
+}
+.reviews-item {
+  @include media(desktop) {
+  }
+}
+.reviews-item-box {
+  @include media(desktop) {
+  }
+}
+.reviews-star {
+  @include media(desktop) {
+  }
+}
+.reviews-item-title {
+  @include media(desktop) {
+  }
+}
+.reviews-item-text {
+  @include media(desktop) {
+  }
+}
+.reviews-yellow-star {
+  @include media(desktop) {
+  }
+}

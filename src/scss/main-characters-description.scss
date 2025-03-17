@@ -13,6 +13,7 @@
   background-image: url('../img/img/main_characters_description/Main\ Characters\ Description_BG_mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   @media (min-resolution: 2dppx) {
     background-image: url('../img/img/main_characters_description/Main\ Characters\ Description_BG_mobile@2x.png');
@@ -20,8 +21,9 @@
 
   @include media(desktop) {
     background-image: url('../img/img/main_characters_description/Main\ Characters\ Description_BG_desktop.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
 
     @media (min-resolution: 2dppx) {
       background-image: url('../img/img/main_characters_description/Main\ Characters\ Description_BG_desktop@2x.png');
@@ -32,7 +34,8 @@
   padding: 24px 24px 0 24px;
   @include media(desktop) {
     padding: 80px 19px;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }

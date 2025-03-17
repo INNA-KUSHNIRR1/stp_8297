@@ -63,6 +63,18 @@ $_main_characters_background_desktop: linear-gradient(
   #b58a32 100%
 );
 
+$_reviews_text: #3b242a;
+$_reviews_bg_mobile: linear-gradient(180deg, #d09a29 0%, #ffb417 100%);
+$_reviews_bg_desktop: linear-gradient(
+  180deg,
+  #b58a32 0%,
+  #c79733 18.5%,
+  #ebb647 41%,
+  #ffb516 100%
+);
+
+$_reviews_bg_item: #ffffff33;
+
 $_legal_color: #ffff;
 $_legal_title_color: #ffdc18;
 $_legal_bg_color: #11171c;

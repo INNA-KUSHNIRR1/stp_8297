@@ -11,6 +11,7 @@
   background-image: url('../img/img/benefits/Benefits_BG_mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   @media (min-resolution: 2dppx) {
     background-image: url('../img/img/benefits/Benefits_BG_mobile@2x.png');
@@ -20,6 +21,7 @@
     background-image: url('../img/img/benefits/benefits_BG_desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     @media (min-resolution: 2dppx) {
       background-image: url('../img/img/benefits/benefits_BG_desktop@2x.png');
