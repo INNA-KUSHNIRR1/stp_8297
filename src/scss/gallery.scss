@@ -1,16 +1,13 @@
 .gallery {
   width: 100%;
-  background: linear-gradient(180deg, #f1c25e 0%, #ddb362 90.49%);
+
+  background: $_gallery_bg_mobil;
+
   overflow: hidden;
   scroll-margin-top: 65px;
+
   @include media(desktop) {
-    background: linear-gradient(
-      180deg,
-      #f1c25e 2.75%,
-      #eabb59 32%,
-      #bc9137 72.5%,
-      #b58a32 100%
-    );
+    background: $_gallery_bg_desktop;
 
     scroll-margin-top: 113px;
   }
@@ -29,12 +26,16 @@
   }
 }
 
-.gallery-bg {
-}
 .gallery-container {
+  padding: 20px 0;
+
+  @include media(desktop) {
+    padding: 80px 61px;
+  }
 }
+
 .gallery-title {
-  padding-bottom: 16px;
+  padding-bottom: 20px;
 
   font-family: Fredoka, sans-serif;
   font-weight: 700;
@@ -42,15 +43,18 @@
   line-height: 36px;
   letter-spacing: 0;
   text-align: center;
-  color: #3b242a;
+  color: $_gallery_title_color;
 
   @include media(desktop) {
+    padding-bottom: 40px;
     font-size: 45px;
     line-height: 68px;
   }
 }
+
 .swiper {
 }
+
 .gallery-swiper {
   max-width: 296px;
   margin: 0 auto;
@@ -65,19 +69,26 @@
     visibility: hidden;
     width: 0;
     height: 0;
+
     overflow: hidden;
   }
 }
+
 .swiper-wrapper {
   padding-bottom: 20px;
 }
+
 .swiper-slide {
 }
+
 .gallery-img {
+  border-radius: 3.31px;
 }
+
 .swiper-pagination {
   bottom: 10px;
   z-index: 10;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,19 +96,36 @@
 .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
-  background-color: rgba(59, 36, 42, 0.5) !important;
   margin: 0 5px;
-  opacity: 1;
+
+  background-color: $_gallery_bullet_bg_color !important;
+
+  opacity: 1 !important;
 }
+
+.swiper-pagination-horizontal {
+  bottom: 88px !important;
+
+  background-color: transparent !important;
+}
+
 .swiper-pagination-bullet-active {
   width: 13px;
   height: 13px;
-  background-color: #3b242a !important;
+
+  background-color: $_gallery_bullet_active_bg_color !important;
 }
+
 .sword {
 }
+
 .gallery-static {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
+
 .gallery-static-wrapper {
   display: none;
   position: relative;
@@ -107,13 +135,19 @@
   overflow: hidden;
 
   @include media(desktop) {
-    display: block;
-    visibility: visible;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     width: auto;
     height: auto;
+
+    visibility: visible;
   }
 }
+
 .gallery-static-slide {
 }
+
 .gallery-static-img {
+  border-radius: 6px;
 }
