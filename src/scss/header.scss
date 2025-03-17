@@ -2,18 +2,18 @@
   position: fixed;
   z-index: 5;
   padding: 24px;
+  background-color: $_header_bg;
+  width: 100%;
   @include media(desktop) {
     padding: 0;
-    width: 100%;
     margin: 0 auto;
-    background-color: $_header_bg;
   }
 }
 
 .header-container {
   display: flex;
   flex-direction: row;
-  width: 177px;
+  // min-width: 320px;
   align-items: center;
   justify-content: space-between;
   @include media(desktop) {
@@ -80,7 +80,7 @@
   padding: 0;
   border: none;
   stroke: none;
-  fill: #000000;
+  fill: $_header_burger;
   background-color: transparent;
   @include media(desktop) {
     display: none;
