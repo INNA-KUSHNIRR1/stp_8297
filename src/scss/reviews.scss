@@ -31,11 +31,10 @@
   }
 }
 .reviews-container {
-  padding: 24px;
+  padding: 24px 0;
   width: 100%;
   margin: 0 auto;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+
   @include media(desktop) {
     width: 100%;
     // height: 100%;
@@ -43,6 +42,10 @@
     max-width: 1200px;
     padding: 80px 112px 183.77px 117px;
   }
+}
+.reviews-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .reviews-title {
   font-family: Fredoka;
@@ -62,9 +65,10 @@
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 12px;
-  justify-content: center;
-  overflow: hidden;
-  width: 100%;
+  justify-content: flex-start;
+  overflow: visible;
+  width: max-content;
+  min-width: 100;
   @include media(desktop) {
     flex-direction: column-reverse;
     align-items: center;
