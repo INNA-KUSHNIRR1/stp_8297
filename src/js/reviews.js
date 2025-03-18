@@ -7,7 +7,9 @@ import 'swiper/css/navigation';
 document.addEventListener('DOMContentLoaded', function () {
   function initSwiper() {
     return new Swiper('.reviews-swiper', {
-      loop: true,
+      modules: [Pagination, Navigation],
+      direction: 'horizontal',
+      // loop: true,
       slidesPerView: 'auto',
       spaceBetween: 12,
       centeredSlides: true,
@@ -17,13 +19,17 @@ document.addEventListener('DOMContentLoaded', function () {
         clickable: true,
         dynamicBullets: true,
       },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });
   }
 
-  let swiperInstance; // Для хранения экземпляра Swiper
+  let swiperInstance; // Храним экземпляр Swiper
 
   function checkScreenSize() {
-    const isMobile = window.innerWidth < 1199;
+    const isMobile = window.innerWidth < 1024;
     const swiperContainer = document.querySelector('.reviews-swiper');
 
     if (isMobile) {
@@ -33,6 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('.reviews-item').forEach(slide => {
           slide.classList.add('swiper-slide');
         });
+
+        // Проверяем, есть ли пагинация, если нет — создаем
+        let paginationContainer = document.querySelector('.swiper-pagination');
+        if (!paginationContainer) {
+          paginationContainer = document.createElement('div');
+          paginationContainer.classList.add('swiper-pagination');
+          swiperContainer.appendChild(paginationContainer);
+        }
 
         swiperInstance = initSwiper();
       }
@@ -49,6 +63,12 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelectorAll('.reviews-item').forEach(slide => {
         slide.classList.remove('swiper-slide');
       });
+
+      // Удаляем пагинацию на десктопе
+      const paginationContainer = document.querySelector('.swiper-pagination');
+      if (paginationContainer) {
+        paginationContainer.remove();
+      }
     }
   }
 

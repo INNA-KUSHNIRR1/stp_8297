@@ -20,9 +20,9 @@
 
   @include media(desktop) {
     background-image: url('../img/img/game_description/Game Description_BG_desktop.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
 
     @media (min-resolution: 2dppx) {
       background-image: url('../img/img/game_description/Game Description_BG_desktop@2x.png');
@@ -48,7 +48,7 @@
   font-family: Fredoka;
   font-weight: 700;
   font-size: 24.2px;
-  line-height: 150%;
+  line-height: 1.5em;
   letter-spacing: 0%;
   margin-bottom: 34.34px;
   @include media(desktop) {
@@ -61,20 +61,15 @@
   position: relative;
 }
 .game-description-wrapper-img {
-  // position: relative;
-  // overflow: visible;
   width: 247.8px;
   height: 166.1px;
-  // top: 18.21px;
   border-radius: 9.46px;
-  // border-width: 0.59px;
   border: 0.59px solid #3b242a;
   margin-bottom: 16.13px;
 
   @include media(desktop) {
     width: 419.28px;
     height: 281.06px;
-    // top: 30.8px;
     border-radius: 16px;
     border-width: 1px;
     margin-bottom: 0;
@@ -115,12 +110,13 @@
 .game-description-content-title {
   text-transform: capitalize;
   font-family: Fredoka;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5em;
   letter-spacing: 0%;
   color: $_game_description_text;
   @include media(desktop) {
+    font-weight: 700;
     font-size: 24px;
     margin-bottom: 16px;
   }
@@ -141,7 +137,7 @@
     font-family: Open Sans;
     font-weight: 700;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5em;
     letter-spacing: 0%;
   }
 }
