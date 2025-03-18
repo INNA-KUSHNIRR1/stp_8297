@@ -1,12 +1,14 @@
 .gallery {
   width: 100%;
+  max-height: 345px;
 
   background: $_gallery_bg_mobil;
 
-  overflow: hidden;
   scroll-margin-top: 65px;
 
   @include media(desktop) {
+    max-height: none;
+
     background: $_gallery_bg_desktop;
 
     scroll-margin-top: 113px;
@@ -27,7 +29,7 @@
 }
 
 .gallery-container {
-  padding: 20px 0;
+  padding: 24px;
 
   @include media(desktop) {
     padding: 80px 61px;
@@ -69,8 +71,6 @@
     visibility: hidden;
     width: 0;
     height: 0;
-
-    overflow: hidden;
   }
 }
 
@@ -94,8 +94,8 @@
   align-items: center;
 }
 .swiper-pagination-bullet {
-  width: 6px;
-  height: 6px;
+  width: 13px !important;
+  height: 13px !important;
   margin: 0 5px;
 
   background-color: $_gallery_bullet_bg_color !important;
@@ -104,19 +104,31 @@
 }
 
 .swiper-pagination-horizontal {
-  bottom: 88px !important;
-
   background-color: transparent !important;
 }
 
-.swiper-pagination-bullet-active {
-  width: 13px;
-  height: 13px;
+.swiper-pagination-bullets-dynamic {
+  overflow: visible !important;
+}
 
+.swiper-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  left: 37% !important;
+  top: 72% !important;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.swiper-pagination-bullet-active {
   background-color: $_gallery_bullet_active_bg_color !important;
 }
 
 .sword {
+  position: relative;
+  top: -72px;
+}
+.sword-img {
 }
 
 .gallery-static {
@@ -132,7 +144,6 @@
   visibility: hidden;
   width: 0;
   height: 0;
-  overflow: hidden;
 
   @include media(desktop) {
     display: flex;
@@ -150,4 +161,18 @@
 
 .gallery-static-img {
   border-radius: 6px;
+}
+
+.gallery-static-slide:nth-child(1) .gallery-static-img,
+.gallery-static-slide:nth-child(5) .gallery-static-img {
+  border-radius: 5px;
+}
+
+.gallery-static-slide:nth-child(2) .gallery-static-img,
+.gallery-static-slide:nth-child(4) .gallery-static-img {
+  border-radius: 6px;
+}
+
+.gallery-static-slide:nth-child(3) .gallery-static-img {
+  border-radius: 7px;
 }
