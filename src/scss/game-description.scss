@@ -2,7 +2,7 @@
   width: 100%;
   background: $_game_description_background_mobile;
   color: $_game_description_text;
-  scroll-margin-top: 65px;
+  scroll-margin-top: 72px;
   @include media(desktop) {
     background: $_game_description_background_desktop;
     scroll-margin-top: 113px;

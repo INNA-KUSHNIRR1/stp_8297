@@ -1,7 +1,7 @@
 .key-features {
   width: 100%;
   background: $_key_features_bg_mobile;
-  scroll-margin-top: 65px;
+  scroll-margin-top: 72px;
   @include media(desktop) {
     background: $_key_features_bg_desktop;
     scroll-margin-top: 113px;

@@ -1,11 +1,11 @@
 .header-header {
   position: fixed;
   z-index: 5;
-  padding: 24px;
+  padding: 16px 24px;
   background-color: $_header_bg;
   width: 100%;
   @include media(desktop) {
-    padding: 0;
+    padding: 24px 0;
     margin: 0 auto;
   }
 }

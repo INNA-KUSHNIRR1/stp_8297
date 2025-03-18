@@ -2,7 +2,7 @@
   width: 100%;
   background: $_reviews_bg_mobile;
   color: $_reviews_text;
-  scroll-margin-top: 65px;
+  scroll-margin-top: 72px;
   @include media(desktop) {
     background: $_reviews_bg_desktop;
     scroll-margin-top: 113px;

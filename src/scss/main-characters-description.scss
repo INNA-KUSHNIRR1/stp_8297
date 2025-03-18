@@ -4,7 +4,7 @@
   color: $_main_characters_text;
   background: $_main_characters_background_mobile;
 
-  scroll-margin-top: 65px;
+  scroll-margin-top: 72px;
 
   @include media(desktop) {
     background: $_main_characters_background_desktop;
