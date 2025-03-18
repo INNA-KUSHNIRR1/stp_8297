@@ -1,7 +1,19 @@
 .benefits {
+  position: relative;
   width: 100%;
   background: $_benefits_background;
   overflow: hidden;
+}
+.benefits-scroll {
+  position: absolute;
+  top: -72px;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  // scroll-margin-top: 72px;
+  @include media(desktop) {
+    top: -113px;
+  }
 }
 .benefits-bg {
   background-image: url('../img/img/benefits/Benefits_BG_mobile.png');
@@ -25,17 +37,19 @@
   }
 }
 .benefits-container {
+  width: 320px;
   position: relative;
   padding: 24px;
   color: $_benefits_brown;
-  scroll-margin-top: 72px;
+
+  margin: 0 auto;
+  // overflow: hidden;
   @include media(desktop) {
     padding: 80px 32px;
     height: 1132px;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    scroll-margin-top: 113px;
+    // scroll-margin-top: 113px;
   }
 }
 .benefits-title {
