@@ -1,16 +1,16 @@
 .header-header {
   position: fixed;
   z-index: 5;
-  padding: 16px 24px;
   background-color: $_header_bg;
   width: 100%;
   @include media(desktop) {
-    padding: 24px 0;
+    // padding: 0;
     margin: 0 auto;
   }
 }
 
 .header-container {
+  padding: 16px 24px;
   display: flex;
   flex-direction: row;
   width: 320px;
