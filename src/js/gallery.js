@@ -9,7 +9,7 @@ const swiper = new Swiper('.gallery-swiper', {
   direction: 'horizontal',
   // loop: true,
   slidesPerView: 2,
-  spaceBetween: 20,
+  spaceBetween: '6px',
 
   pagination: {
     el: '.swiper-pagination',
