@@ -25,9 +25,6 @@
 
   @include media(desktop) {
     background-image: url('../img/img/main_characters_description/Main\ Characters\ Description_BG_desktop.png');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
 
     @media (min-resolution: 2dppx) {
       background-image: url('../img/img/main_characters_description/Main\ Characters\ Description_BG_desktop@2x.png');
@@ -39,21 +36,21 @@
   padding: 24px 24px 0 24px;
 
   @include media(desktop) {
-    padding: 80px 19px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 80px 19px;
   }
 }
 
 .main-characters-title {
   margin-bottom: 16px;
 
-  font-family: Fredoka, sans-serif;
   font-weight: 700;
   font-size: 24.2px;
-  line-height: 36px;
+  line-height: 1.5em;
   letter-spacing: 0;
+  font-family: Fredoka, sans-serif;
   text-align: center;
 
   @include media(desktop) {
@@ -68,13 +65,35 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   text-align: center;
 
   @include media(desktop) {
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     row-gap: 47px;
+    column-gap: 0px;
     justify-content: space-evenly;
+
+    .main-characters-item:nth-child(2) {
+      margin-left: -125px;
+    }
+
+    .main-characters-item:nth-child(3) {
+      order: 1;
+    }
+    .main-characters-item:nth-child(4) {
+      order: 2;
+    }
+    .main-characters-item:nth-child(5) {
+      order: 3;
+    }
+    .main-characters-item:nth-child(1) {
+      order: 4;
+    }
+    .main-characters-item:nth-child(2) {
+      order: 5;
+    }
   }
 }
 
@@ -108,6 +127,7 @@
     width: 387px;
     height: 207px;
     padding: 14px 69px 34px 69px;
+
     background-image: url('../img/img/main_characters_description/two-blank-banners-medieval-style_desktop.png');
 
     @media (min-resolution: 2dppx) {
@@ -126,11 +146,11 @@
   }
 }
 .main-characters-item-title {
-  font-family: Fredoka, sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0;
+  font-family: Fredoka, sans-serif;
 
   @include media(desktop) {
     font-size: 24px;
@@ -140,8 +160,8 @@
 .main-characters-item-description {
   font-family: Open Sans, sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 10.44px;
+  line-height: 1.5em;
   letter-spacing: 0;
 
   @include media(desktop) {

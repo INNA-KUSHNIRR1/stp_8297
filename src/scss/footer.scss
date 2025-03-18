@@ -12,7 +12,7 @@
 
   @include media(desktop) {
     gap: 56px;
-    padding: 40px 47px;
+    padding: 40px 117.5px;
   }
 }
 
@@ -23,11 +23,12 @@
   align-items: center;
   gap: 8px;
 
-  font-family: Fredoka, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 10px;
-  line-height: 15px;
+  line-height: 1.5em;
   letter-spacing: 0;
+  font-family: Fredoka, sans-serif;
+
   color: $_legal_color;
 
   @include media(desktop) {
@@ -35,24 +36,20 @@
     justify-content: space-between;
     gap: 260px;
 
-    font-family: Open Sans, sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 1.5em;
   }
 }
 
 .legal-link {
   text-decoration: none;
+
   color: $_legal_color;
+
   transition: color 0.3s ease;
 
   @include media(desktop) {
-    font-family: Open Sans, sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-
     &:hover,
     &:focus {
       color: $_legal_accent_color;
@@ -65,17 +62,15 @@
 }
 
 .legal-text {
-  font-family: Fredoka, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5em;
   letter-spacing: 0;
+  font-family: Fredoka, sans-serif;
+
   color: $_legal_color;
 
   @include media(desktop) {
-    font-family: Open Sans, sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 20px;
   }
 }

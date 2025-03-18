@@ -2,11 +2,12 @@
   position: fixed;
   top: 210px;
   left: 0;
-  width: 100%;
   z-index: 1001;
+
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  width: 100%;
 
   @include media(desktop) {
     top: 435px;
@@ -16,11 +17,11 @@
 .modal-cookies-wrapper {
   position: relative;
   z-index: 1002;
-  width: 100%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   padding: 16px 24px;
 
   background: $_Popup_cookies_bg_color;
@@ -31,7 +32,9 @@
 
   @include media(desktop) {
     left: 50%;
+
     padding: 56px 32px;
+
     transform: translateX(-50%);
   }
 }
@@ -49,18 +52,18 @@
 }
 
 .modal-cookies-title {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 
-  font-family: Open Sans, sans-serif;
   font-weight: 800;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1em;
   letter-spacing: 0;
+  font-family: Open Sans, sans-serif;
+
   color: $_Popup_cookies_color;
 
   @include media(desktop) {
     font-size: 48px;
-    line-height: 48px;
   }
 }
 
@@ -77,16 +80,17 @@
 
 .modal-cookies-text {
   padding-bottom: 44px;
-  font-family: Open Sans, sans-serif;
+
   font-weight: 700;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0;
+  font-family: Open Sans, sans-serif;
+
   color: $_Popup_cookies_color;
 
   @include media(desktop) {
     font-size: 24px;
-    line-height: 36px;
   }
 }
 
@@ -107,11 +111,11 @@
   width: 271px;
   height: 50px;
 
-  font-family: Open Sans, sans-serif;
   font-weight: 700;
-  size: 12px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 1.5em;
   letter-spacing: 0;
+  font-family: Open Sans, sans-serif;
 
   border-radius: 16px;
   border: none;
@@ -121,7 +125,6 @@
     height: 62px;
 
     font-size: 20px;
-    line-height: 30px;
   }
 }
 
@@ -134,13 +137,13 @@
   @include media(desktop) {
     &:hover,
     &:focus {
-      background-color: $_Popup_cookies_btn_accept_accent;
       color: $_Popup_cookies_btn_bg;
+      background-color: $_Popup_cookies_btn_accept_accent;
     }
 
     &:active {
-      background-color: $_Popup_cookies_btn_accept_pressed;
       color: $_Popup_cookies_btn_bg;
+      background-color: $_Popup_cookies_btn_accept_pressed;
     }
   }
 }
