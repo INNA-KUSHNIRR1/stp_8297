@@ -14,12 +14,12 @@
 
 .key-features-bg {
   @include media(desktop) {
-    background-image: url('../img/img/key_features/Key Features_BG_desktop.png');
+    background-image: url('../img/img/key_features/Key_Features_BG_desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url('../img/img/key_features/Key Features_BG_desktop@2x.png');
+      background-image: url('../img/img/key_features/Key_Features_BG_desktop@2x.png');
     }
   }
 }
