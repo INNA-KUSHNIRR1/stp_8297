@@ -25,9 +25,6 @@
 
   @include media(desktop) {
     background-image: url('../img/img/game_description/Game Description_BG_desktop.png');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
 
     @media (min-resolution: 2dppx) {
       background-image: url('../img/img/game_description/Game Description_BG_desktop@2x.png');
@@ -152,10 +149,6 @@
   line-height: 1.5em;
   letter-spacing: 0%;
   font-family: Open Sans;
-
-  @include media(desktop) {
-    // font-weight: 700;
-  }
 }
 
 .game-description-span {

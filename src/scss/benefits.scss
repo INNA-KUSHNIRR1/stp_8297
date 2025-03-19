@@ -14,7 +14,7 @@
 
   width: 1px;
   height: 1px;
-  // scroll-margin-top: 72px;
+
   @include media(desktop) {
     top: -113px;
   }
@@ -31,9 +31,6 @@
 
   @include media(desktop) {
     background-image: url('../img/img/benefits/benefits_BG_desktop.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 
     @media (min-resolution: 2dppx) {
       background-image: url('../img/img/benefits/benefits_BG_desktop@2x.png');
@@ -49,13 +46,11 @@
 
   color: $_benefits_brown;
 
-  // overflow: hidden;
   @include media(desktop) {
     height: 1132px;
     width: 100%;
     max-width: 1200px;
     padding: 80px 32px;
-    // scroll-margin-top: 113px;
   }
 }
 .benefits-title {
