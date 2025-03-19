@@ -16,6 +16,13 @@
 }
 
 .gallery-bg {
+}
+
+.gallery-container {
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 24px;
   background-image: none;
 
   @include media(desktop) {
@@ -27,13 +34,9 @@
       background-image: url('../img/img/gallery/Gallery_BG_desktop@2x.png');
     }
   }
-}
-
-.gallery-container {
-  padding: 24px;
-
   @include media(desktop) {
     padding: 80px 61px;
+    max-width: 1200px;
   }
 }
 

@@ -13,6 +13,16 @@
 }
 
 .key-features-bg {
+}
+
+.key-features-container {
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 24.2px;
+
+  color: $_key_features_text;
+
   @include media(desktop) {
     background-image: url('../img/img/key_features/Key_Features_BG_desktop.png');
     background-repeat: no-repeat;
@@ -22,18 +32,8 @@
       background-image: url('../img/img/key_features/Key_Features_BG_desktop@2x.png');
     }
   }
-}
-
-.key-features-container {
-  max-width: 320px;
-  margin: 0 auto;
-  padding: 24.2px;
-
-  color: $_key_features_text;
-
   @include media(desktop) {
     height: 1122px;
-    width: 100%;
     max-width: 1200px;
     padding: 80px 178px 80px 420px;
   }
@@ -62,9 +62,9 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin: 0;
+  margin: 0 auto;
   padding-left: 0;
-
+  width: 100%;
   counter-reset: list-counter;
   list-style: none;
 

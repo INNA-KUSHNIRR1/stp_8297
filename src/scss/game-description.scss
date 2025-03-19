@@ -1,5 +1,6 @@
 .game-description {
   width: 100%;
+  margin: 0 auto;
 
   color: $_game_description_text;
   background: $_game_description_background_mobile;
@@ -14,6 +15,14 @@
 }
 
 .game-description-bg {
+}
+
+.game-description-container {
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 24.2px;
+
   background-image: url('../img/img/game_description/Game_Description_BG_mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,16 +39,10 @@
       background-image: url('../img/img/game_description/Game_Description_BG_desktop@2x.png');
     }
   }
-}
-
-.game-description-container {
-  max-width: 320px;
-  margin: 0 auto;
-  padding: 24.2px;
-
   @include media(desktop) {
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 129px;
@@ -109,6 +112,7 @@
 .game-description-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @include media(desktop) {
     flex-direction: row-reverse;

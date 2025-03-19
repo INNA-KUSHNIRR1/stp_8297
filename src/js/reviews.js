@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let swiperInstance; // Store an instance of Swiper
 
   function checkScreenSize() {
-    const isMobile = window.innerWidth < 1024;
+    const isMobile = window.innerWidth < 1199;
     const swiperContainer = document.querySelector('.reviews-swiper');
 
     if (isMobile) {

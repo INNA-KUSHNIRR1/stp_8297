@@ -21,6 +21,8 @@
   }
 }
 .benefits-bg {
+}
+.benefits-container {
   background-image: url('../img/img/benefits/Benefits_BG_mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,11 +39,9 @@
       background-image: url('../img/img/benefits/benefits_BG_desktop@2x.png');
     }
   }
-}
-.benefits-container {
   // position: relative;
-
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   padding: 24px;
 
@@ -49,7 +49,7 @@
 
   @include media(desktop) {
     height: 1132px;
-    width: 100%;
+
     max-width: 1200px;
     padding: 80px 32px;
   }
@@ -182,14 +182,15 @@
 .benefits-dragon {
   position: absolute;
   right: 0;
-  bottom: 105.23px;
-  width: 209px;
+  bottom: 80px;
+  width: 200px;
+  // height: 174px;
 
   @include media(desktop) {
     bottom: 40px;
     left: 136px;
 
     width: 383px;
-    height: 264px;
+    // height: 264px;
   }
 }
