@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  let swiperInstance; // Храним экземпляр Swiper
+  let swiperInstance; // Store an instance of Swiper
 
   function checkScreenSize() {
     const isMobile = window.innerWidth < 1024;
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
           slide.classList.add('swiper-slide');
         });
 
-        // Проверяем, есть ли пагинация, если нет — создаем
+        // Check if there is pagination, if not - create it
         let paginationContainer = document.querySelector('.swiper-pagination');
         if (!paginationContainer) {
           paginationContainer = document.createElement('div');
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
         slide.classList.remove('swiper-slide');
       });
 
-      // Удаляем пагинацию на десктопе
+      // Remove pagination on the desktop
       const paginationContainer = document.querySelector('.swiper-pagination');
       if (paginationContainer) {
         paginationContainer.remove();
