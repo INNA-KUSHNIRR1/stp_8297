@@ -23,6 +23,12 @@
 .benefits-bg {
 }
 .benefits-container {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding: 24px;
+
+  color: $_benefits_brown;
   background-image: url('../img/img/benefits/Benefits_BG_mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,17 +45,10 @@
       background-image: url('../img/img/benefits/benefits_BG_desktop@2x.png');
     }
   }
-  // position: relative;
-  width: 100%;
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 24px;
-
-  color: $_benefits_brown;
 
   @include media(desktop) {
     height: 1132px;
-
+    width: 100%;
     max-width: 1200px;
     padding: 80px 32px;
   }

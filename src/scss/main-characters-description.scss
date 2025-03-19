@@ -17,8 +17,7 @@
 }
 
 .main-characters-container {
-  width: 100%;
-  min-width: 320px;
+  width: 320px;
   margin: 0 auto;
   padding: 24px 24px 0 24px;
   background-image: url('../img/img/main_characters_description/Main_Characters_Description_BG_mobile.png');
@@ -38,6 +37,7 @@
     }
   }
   @include media(desktop) {
+    width: 100%;
     max-width: 1200px;
 
     padding: 80px 19px;
