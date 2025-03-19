@@ -1,13 +1,18 @@
 .game-description {
   width: 100%;
-  background: $_game_description_background_mobile;
+
   color: $_game_description_text;
+  background: $_game_description_background_mobile;
+
   scroll-margin-top: 72px;
+
   @include media(desktop) {
     background: $_game_description_background_desktop;
+
     scroll-margin-top: 113px;
   }
 }
+
 .game-description-bg {
   background-image: url('../img/img/game_description/Game Description_BG_mobile.png');
   background-repeat: no-repeat;
@@ -29,10 +34,12 @@
     }
   }
 }
+
 .game-description-container {
-  padding: 24.2px;
   max-width: 320px;
   margin: 0 auto;
+  padding: 24.2px;
+
   @include media(desktop) {
     width: 100%;
     max-width: 1200px;
@@ -42,15 +49,18 @@
     padding-right: 191px;
   }
 }
+
 .game-description-title {
+  margin-bottom: 34.34px;
+
   text-align: center;
   text-transform: capitalize;
-  font-family: Fredoka;
   font-weight: 700;
   font-size: 24.2px;
   line-height: 1.5em;
   letter-spacing: 0%;
-  margin-bottom: 34.34px;
+  font-family: Fredoka;
+
   @include media(desktop) {
     font-size: 45px;
     text-align: left;
@@ -60,84 +70,100 @@
 .game-description-img-box {
   position: relative;
 }
+
 .game-description-wrapper-img {
   width: 247.8px;
   height: 166.1px;
+  margin-bottom: 16.13px;
+
   border-radius: 9.46px;
   border: 0.59px solid #3b242a;
-  margin-bottom: 16.13px;
 
   @include media(desktop) {
     width: 419.28px;
     height: 281.06px;
+    margin-bottom: 0;
+
     border-radius: 16px;
     border-width: 1px;
-    margin-bottom: 0;
   }
 }
+
 .game-description-img {
   position: absolute;
-  width: 267.2px;
-  height: 179.1px;
   top: -18.21px;
   left: 7.05px;
+
+  width: 267.2px;
+  height: 179.1px;
+
   border-radius: 9.46px;
 
   @include media(desktop) {
-    width: 452px;
-    height: 303px;
     left: 11.92px;
     top: -30.8px;
+
+    width: 452px;
+    height: 303px;
     border-radius: 16px;
   }
 }
 .game-description-content {
   display: flex;
   flex-direction: column;
+
   @include media(desktop) {
     flex-direction: row-reverse;
     justify-content: flex-end;
     gap: 92px;
   }
 }
+
 .game-description-content-box {
   display: flex;
   flex-direction: column;
+
   @include media(desktop) {
     width: 368px;
   }
 }
+
 .game-description-content-title {
   text-transform: capitalize;
-  font-family: Fredoka;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5em;
   letter-spacing: 0%;
+  font-family: Fredoka;
+
   color: $_game_description_text;
+
   @include media(desktop) {
+    margin-bottom: 16px;
+
     font-weight: 700;
     font-size: 24px;
-    margin-bottom: 16px;
   }
 }
+
 .game-description-content-text {
-  font-family: Open Sans;
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5em;
   letter-spacing: 0%;
+  font-family: Open Sans;
 
   @include media(desktop) {
     // font-weight: 700;
   }
 }
+
 .game-description-span {
   @include media(desktop) {
-    font-family: Open Sans;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0%;
+    font-family: Open Sans;
   }
 }

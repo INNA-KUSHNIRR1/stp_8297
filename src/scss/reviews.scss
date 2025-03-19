@@ -1,20 +1,26 @@
 .reviews {
   position: relative;
+
   width: 100%;
 
-  background: $_reviews_bg_mobile;
   color: $_reviews_text;
-  scroll-margin-top: 72px;
+  background: $_reviews_bg_mobile;
+
   overflow: hidden;
+  scroll-margin-top: 72px;
+
   @include media(desktop) {
     background: $_reviews_bg_desktop;
+
     scroll-margin-top: 113px;
   }
 }
+
 .reviews-scroll {
   position: absolute;
   top: -72px;
   left: 0;
+
   width: 1px;
   height: 1px;
 
@@ -22,6 +28,7 @@
     top: -113px;
   }
 }
+
 .reviews-bg {
   background-image: url('../img/img/reviews/Reviews_BG_mobile.png');
   background-repeat: no-repeat;
@@ -43,14 +50,16 @@
     }
   }
 }
+
 .reviews-container {
-  padding: 24px 0;
   width: 100%;
   min-width: 320px;
   margin: 0 auto;
+  padding: 24px 0;
   // height: 400px;
   @include media(desktop) {
     align-content: center;
+
     width: 100%;
     max-width: 1200px;
     padding: 80px 112px 183.77px 117px;
@@ -58,47 +67,55 @@
 }
 
 .reviews-title {
-  font-family: Fredoka;
+  margin-bottom: 16.14px;
+
   font-weight: 700;
   font-size: 29px;
-  line-height: 150%;
+  line-height: 1.5em;
   letter-spacing: 0%;
+  font-family: Fredoka;
   text-align: center;
-  margin-bottom: 16.14px;
+
   @include media(desktop) {
-    font-size: 45px;
     margin-bottom: 35px;
+
+    font-size: 45px;
   }
 }
+
 .reviews-list {
   min-width: 0;
 
   @include media(desktop) {
     display: grid;
     flex-direction: column-reverse;
-    align-items: center;
     justify-items: center;
-    height: 581.23px;
+    align-items: center;
     column-gap: 16px;
     row-gap: 64px;
     grid-template-columns: 1fr 1fr 1fr;
+    height: 581.23px;
   }
 }
+
 .reviews-swiper .swiper-wrapper {
   // box-sizing: border-box !important;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  position: relative;
+
   display: flex;
   max-width: 100%;
-
   width: 320px;
-  position: relative;
   height: 216px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
+
 .reviews-swiper .swiper-pagination {
   bottom: -10px;
 }
+
 .swiper-slide {
   width: auto;
 }
@@ -113,8 +130,9 @@
 }
 
 .reviews-item {
-  box-sizing: border-box;
   position: relative;
+
+  box-sizing: border-box;
   display: flex !important;
   flex-direction: column;
   gap: 7px;
@@ -122,11 +140,11 @@
   align-items: flex-start;
   width: 179px !important;
   height: 179px !important;
-  border-radius: 50%;
-  color: $_reviews_text;
   padding: 46.99px 20.16px 46.99px 20.84px;
-  background-color: $_reviews_bg_item;
 
+  color: $_reviews_text;
+  background-color: $_reviews_bg_item;
+  border-radius: 50%;
   box-shadow: -1px 0px 0px 1px rgb(92 54 45 / 50%),
     -5px 0px 2px 0px rgb(166 82 30 / 40%);
 
@@ -135,6 +153,7 @@
     height: 256px !important;
     gap: 13.68px;
     padding: 68.38px 39.32px;
+
     box-shadow: -4px 1px 0px 1px rgba(92, 54, 45, 0.5),
       -3px 1px 2px 0px rgba(166, 82, 30, 0.4);
   }
@@ -145,18 +164,22 @@
     grid-column: 1;
     grid-row: 1;
   }
+
   .reviews-item:nth-child(2) {
     grid-column: 1;
     grid-row: 2;
   }
+
   .reviews-item:nth-child(3) {
     grid-column: 2;
     grid-row: 1 / span 2;
   }
+
   .reviews-item:nth-child(4) {
     grid-column: 3;
     grid-row: 1;
   }
+
   .reviews-item:nth-child(5) {
     grid-column: 3;
     grid-row: 2;
@@ -170,9 +193,11 @@
     gap: 14.53px;
   }
 }
+
 .reviews-photo {
   width: 21.91px;
   height: 21.91px;
+
   @include media(desktop) {
     width: 42.74px;
     height: 42.74px;
@@ -180,54 +205,62 @@
 }
 
 .reviews-item-title {
-  font-family: Fredoka;
   font-weight: 700;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5em;
   letter-spacing: 0%;
+  font-family: Fredoka;
 
   @include media(desktop) {
     font-size: 20.51px;
   }
 }
+
 .reviews-item-text {
-  font-family: Open Sans;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5em;
   letter-spacing: 0%;
+  font-family: Open Sans;
   text-align: center;
 
   @include media(desktop) {
-    font-size: 13.68px;
     width: 179.5px;
+
+    font-size: 13.68px;
   }
 }
+
 .reviews-yellow-star {
-  width: 10.57px;
-  height: 10.96px;
   position: absolute;
   left: 3.94px;
   top: 89.4px;
 
+  width: 10.57px;
+  height: 10.96px;
+
   @include media(desktop) {
-    width: 20.62px;
-    height: 21.37px;
     left: 7.69px;
     top: 174.37px;
+
+    width: 20.62px;
+    height: 21.37px;
   }
 }
+
 .reviews-star {
-  width: 23.66px;
-  height: 23.66px;
   position: absolute;
   top: 14.02px;
   left: 92.46px;
 
+  width: 23.66px;
+  height: 23.66px;
+
   @include media(desktop) {
-    width: 46.16px;
-    height: 46.16px;
     top: 27.35px;
     left: 180.35px;
+
+    width: 46.16px;
+    height: 46.16px;
   }
 }
