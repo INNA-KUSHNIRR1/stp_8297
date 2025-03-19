@@ -58,7 +58,7 @@
     // justify-content: center;
     width: 100%;
     max-width: 1200px;
-    padding: 80px 112px 183.77px 117px;
+    padding: 80px 175px 184px 175px;
   }
   // @include media(desktop) {
   // }
@@ -75,7 +75,7 @@
   text-align: center;
 
   @include media(desktop) {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
 
     font-size: 45px;
   }
@@ -89,11 +89,11 @@
     flex-direction: column-reverse;
     justify-items: center;
     align-items: center;
-    // column-gap: 16px;
+    column-gap: 16px;
     row-gap: 64px;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 581.23px;
-    width: 850px;
+    height: 584px;
+    width: 830px;
     // max-width: 1200px;
   }
 }
