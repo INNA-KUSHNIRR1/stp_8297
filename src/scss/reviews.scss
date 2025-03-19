@@ -1,6 +1,7 @@
 .reviews {
   position: relative;
   width: 100%;
+
   background: $_reviews_bg_mobile;
   color: $_reviews_text;
   scroll-margin-top: 72px;
@@ -33,8 +34,8 @@
 
   @include media(desktop) {
     background-image: url('../img/img/reviews/Reviews_BG_desktop.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     // background-attachment: scroll;
 
     @media (min-resolution: 2dppx) {
@@ -47,6 +48,7 @@
   width: 100%;
   min-width: 320px;
   margin: 0 auto;
+  // height: 400px;
   @include media(desktop) {
     align-content: center;
     width: 100%;
@@ -82,27 +84,32 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-.swiper-wrapper {
-  box-sizing: border-box !important;
+.reviews-swiper .swiper-wrapper {
+  // box-sizing: border-box !important;
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   max-width: 100%;
+
   width: 320px;
   position: relative;
-  margin-bottom: 36px;
+  height: 216px;
 }
-
+.reviews-swiper .swiper-pagination {
+  bottom: -10px;
+}
 .swiper-slide {
   width: auto;
 }
 
-.swiper-horizontal
+.reviews-swiper
+  .swiper-horizontal
   > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   left: 50% !important;
-  top: 89% !important;
+  top: 94% !important;
+  z-index: 100;
 }
 
 .reviews-item {

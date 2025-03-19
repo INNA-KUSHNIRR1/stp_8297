@@ -1,7 +1,7 @@
 .gallery {
   width: 100%;
   max-height: 345px;
-
+  height: auto;
   background: $_gallery_bg_mobil;
 
   scroll-margin-top: 65px;
@@ -73,7 +73,7 @@
   }
 }
 
-.swiper-wrapper {
+.gallery-swiper.swiper-wrapper {
   padding-bottom: 20px;
 }
 
@@ -82,11 +82,11 @@
 }
 
 .swiper-pagination {
-  bottom: 10px;
+  // bottom: 10px;
   z-index: 10;
 
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
 }
 
 .swiper-pagination-bullet {
@@ -107,7 +107,7 @@
   overflow: visible !important;
 }
 
-.swiper-horizontal
+.gallery-swiper.swiper-horizontal
   > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   left: 38% !important;
