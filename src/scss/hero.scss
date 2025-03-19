@@ -248,16 +248,9 @@
     border: 6px solid #ffffff;
 
     transform: rotate(18deg);
-
-    // box-shadow: 8px 11px 29px 0px #000000c9;
-
-    // box-shadow: 33px 42px 54px 0px #000000ad;
-
-    // box-shadow: 74px 95px 72px 0px #00000066;
-
-    // box-shadow: 131px 170px 86px 0px #0000001f;
-
-    // box-shadow: 205px 265px 94px 0px #00000003;
+    box-shadow: 8px 11px 29px 0px #000000c9, 33px 42px 54px 0px #000000ad,
+      74px 95px 72px 0px #00000066, 131px 170px 86px 0px #0000001f,
+      205px 265px 94px 0px #00000003;
   }
 }
 
