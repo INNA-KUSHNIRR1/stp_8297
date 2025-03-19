@@ -24,7 +24,7 @@
 }
 .benefits-container {
   position: relative;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 24px;
 
@@ -183,13 +183,13 @@
   right: 0;
   bottom: 80px;
   width: 200px;
-  // height: 174px;
+  height: auto;
 
   @include media(desktop) {
     bottom: 40px;
     left: 136px;
 
     width: 383px;
-    // height: 264px;
+    height: 264px;
   }
 }

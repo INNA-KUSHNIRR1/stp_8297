@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     return new Swiper('.reviews-swiper', {
       modules: [Pagination, Navigation],
       direction: 'horizontal',
-      // loop: true,
+      loop: true,
       slidesPerView: 'auto',
       spaceBetween: 12,
       centeredSlides: true,

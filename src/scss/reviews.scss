@@ -33,7 +33,7 @@
 }
 
 .reviews-container {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 24px 0;
 
@@ -51,17 +51,15 @@
     @media (min-resolution: 2dppx) {
       background-image: url('../img/img/reviews/Reviews_BG_desktop@2x.png');
     }
-    // align-content: center;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: center;
+
     width: 100%;
     max-width: 1200px;
     padding: 80px 175px 184px 175px;
   }
-  // @include media(desktop) {
-  // }
 }
 
 .reviews-title {
@@ -94,7 +92,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     height: 584px;
     width: 830px;
-    // max-width: 1200px;
   }
 }
 
