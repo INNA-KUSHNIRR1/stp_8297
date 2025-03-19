@@ -1,6 +1,8 @@
 .hero {
   position: relative;
+
   width: 100%;
+
   overflow: hidden;
   scroll-margin-top: 113px;
 
@@ -48,135 +50,159 @@
     }
   }
 }
+
 .hero-blur {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
+
   width: 100%;
   height: 100%;
+
   backdrop-filter: blur(12px);
-  z-index: -1;
 }
 
 .hero-container {
   position: relative;
-  padding: 85px 24px 16px 24px;
-  margin: 0 auto;
+
   max-width: 320px;
+  margin: 0 auto;
+  padding: 85px 24px 16px 24px;
 
   @include media(desktop) {
-    padding: 170px 128px 72px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 170px 128px 72px;
   }
 }
+
 .hero-title {
-  font-family: Fredoka;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 150%;
-  text-align: left;
-  color: $_hero_title;
   max-width: 271px;
   height: 100%;
   margin-bottom: 8px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5em;
+  font-family: Fredoka;
+  text-align: left;
   text-align: center;
 
+  color: $_hero_title;
+
   @include media(desktop) {
-    font-size: 48px;
     max-width: 785px;
     margin-bottom: 16px;
+
+    font-size: 48px;
     text-align: left;
   }
 }
+
 .hero-text {
-  font-family: Open Sans;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0%;
-  color: $_hero_text;
   max-width: 128px;
   margin-bottom: 78px;
 
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0%;
+  font-family: Open Sans;
+
+  color: $_hero_text;
+
   @include media(desktop) {
-    font-size: 20px;
     max-width: 455px;
     margin-bottom: 23px;
+
     font-weight: 700;
+    font-size: 20px;
   }
 }
 
 .hero-box-btn {
-  margin: 0 auto;
-  width: 200.5px;
   display: flex;
   flex-direction: column;
   gap: 9.78px;
+  width: 200.5px;
+  margin: 0 auto;
+
   @include media(desktop) {
-    margin: 0;
     width: 328px;
+    margin: 0;
   }
 }
+
 .hero-btn {
-  border: none;
   display: flex;
   width: 172.6px;
   height: 40;
   gap: 5.26px;
   padding: 9px 18px;
 
-  border-radius: 8.42px;
   color: $_hero_btn_text;
   background-color: $_hero_btn_bg;
+
+  border: none;
+  border-radius: 8.42px;
+
   transition: all 0.3s ease;
 
   @include media(desktop) {
     width: 100%;
-    padding: 16px 30px;
     gap: 26px;
+    padding: 16px 30px;
   }
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
+  color: $_hero_btn_text_hover_active;
   background-color: $_hero_btn_bg_hover;
-  color: $_hero_btn_text_hover_active;
 }
+
 .hero-btn:active {
-  background-color: $_hero_btn_bg_active;
   color: $_hero_btn_text_hover_active;
+  background-color: $_hero_btn_bg_active;
 }
 
 .hero-btn-text {
-  font-family: Open Sans;
   font-weight: 700;
   font-size: 12px;
-  line-height: 150%;
+  line-height: 1.5em;
   letter-spacing: 0%;
+  font-family: Open Sans;
   text-transform: capitalize;
+
   @include media(desktop) {
     font-size: 24px;
   }
 }
+
 .hero-box-btn-text {
-  font-family: Open Sans;
   font-weight: 400;
   font-style: italic;
   font-size: 12px;
-  line-height: 150%;
+  line-height: 1.5em;
   letter-spacing: 0%;
+  font-family: Open Sans;
+
   color: $_hero_text;
+
   @include media(desktop) {
     font-size: 20px;
   }
 }
+
 .icon-google-play {
   width: 20px;
   height: 20px;
+
   @include media(desktop) {
     width: 38px;
     height: 38px;
@@ -191,34 +217,40 @@
   bottom: 170px;
 
   @include media(desktop) {
-    width: 155px;
-    height: 63.92px;
     bottom: 153px;
     left: 576px;
+
+    width: 155px;
+    height: 63.92px;
   }
 }
+
 .pic {
   position: absolute;
-  margin-top: 7px;
-  width: 93.46px;
-  height: 153.59px;
   right: 43px;
   bottom: 100.04px;
+
+  width: 93.46px;
+  height: 153.59px;
+  margin-top: 7px;
   margin: 0;
+
   border: 4px solid #ffffff;
   border-radius: 6px;
+
   transform: rotate(18deg);
 
   @include media(desktop) {
-    border-radius: 16px;
-    border: 6px solid #ffffff;
+    bottom: -55px;
+    right: 106.74px;
 
     width: 244px;
     height: 401px;
-    transform: rotate(18deg);
 
-    bottom: -55px;
-    right: 106.74px;
+    border-radius: 16px;
+    border: 6px solid #ffffff;
+
+    transform: rotate(18deg);
 
     // box-shadow: 8px 11px 29px 0px #000000c9;
 
@@ -231,6 +263,7 @@
     // box-shadow: 205px 265px 94px 0px #00000003;
   }
 }
+
 .hero-content {
   display: flex;
   gap: 10px;
