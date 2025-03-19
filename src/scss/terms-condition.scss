@@ -21,36 +21,34 @@ main {
 }
 
 .legal-section-container h1 {
-  padding: 40px 0 16px 0;
+  margin: 40px 0 16px 0;
 
   font-family: Fredoka, sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1em;
   letter-spacing: 0;
 
   @include media(desktop) {
     padding: 74px 0 40px 0;
 
     font-size: 48px;
-    line-height: 48px;
   }
 }
 
 .legal-section-container h2 {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 
   font-family: Fredoka, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0;
 
   @include media(desktop) {
-    padding: 20px 0 40px 0;
+    margin: 20px 0 40px 0;
 
     font-size: 24px;
-    line-height: 36px;
   }
 }
 
@@ -112,7 +110,7 @@ main {
   font-family: Open Sans;
   font-weight: 400;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5em;
   letter-spacing: 0;
   margin-bottom: 16px;
 
@@ -120,7 +118,6 @@ main {
     margin-bottom: 20px;
 
     font-size: 16px;
-    line-height: 24px;
   }
 }
 
