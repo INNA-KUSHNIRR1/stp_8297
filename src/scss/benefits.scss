@@ -39,7 +39,7 @@
   }
 }
 .benefits-container {
-  position: relative;
+  // position: relative;
 
   width: 320px;
   margin: 0 auto;
@@ -181,11 +181,9 @@
 
 .benefits-dragon {
   position: absolute;
-  right: -62px;
+  right: 0;
   bottom: 105.23px;
-
   width: 209px;
-  height: 144px;
 
   @include media(desktop) {
     bottom: 40px;

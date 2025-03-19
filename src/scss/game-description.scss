@@ -48,7 +48,7 @@
 }
 
 .game-description-title {
-  margin-bottom: 34.34px;
+  margin-bottom: 34px;
 
   text-align: center;
   text-transform: capitalize;
@@ -61,6 +61,7 @@
   @include media(desktop) {
     font-size: 45px;
     text-align: left;
+    margin-bottom: 40px;
   }
 }
 
@@ -126,8 +127,9 @@
 }
 
 .game-description-content-title {
+  margin-bottom: 8px;
   text-transform: capitalize;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5em;
   letter-spacing: 0%;
@@ -137,8 +139,6 @@
 
   @include media(desktop) {
     margin-bottom: 16px;
-
-    font-weight: 700;
     font-size: 24px;
   }
 }
