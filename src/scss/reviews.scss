@@ -59,7 +59,7 @@
 }
 
 .reviews-title {
-  margin-bottom: 16.14px;
+  margin-bottom: 16px;
 
   font-weight: 700;
   font-size: 29px;
@@ -132,7 +132,7 @@
   align-items: flex-start;
   width: 179px !important;
   height: 179px !important;
-  padding: 46.99px 20.16px 46.99px 20.84px;
+  padding: 47px 20px 47px 21px;
 
   color: $_reviews_text;
   background-color: $_reviews_bg_item;
@@ -142,8 +142,8 @@
   @include media(desktop) {
     width: 266px !important;
     height: 256px !important;
-    gap: 13.68px;
-    padding: 68.38px 39.32px;
+    gap: 14px;
+    padding: 68px 40px;
     backdrop-filter: blur(19px);
 
     box-shadow: $_reviews_box_shadow_desktop;
@@ -179,19 +179,19 @@
 
 .reviews-item-box {
   display: flex;
-  gap: 7.45px;
+  gap: 8px;
   @include media(desktop) {
-    gap: 14.53px;
+    gap: 15px;
   }
 }
 
 .reviews-photo {
-  width: 21.91px;
-  height: 21.91px;
+  width: 22px;
+  height: 22px;
 
   @include media(desktop) {
-    width: 42.74px;
-    height: 42.74px;
+    width: 43px;
+    height: 43px;
   }
 }
 
@@ -203,7 +203,7 @@
   font-family: Fredoka;
 
   @include media(desktop) {
-    font-size: 20.51px;
+    font-size: 21px;
   }
 }
 
@@ -218,7 +218,7 @@
   @include media(desktop) {
     width: 179.5px;
 
-    font-size: 13.68px;
+    font-size: 14px;
   }
 }
 
