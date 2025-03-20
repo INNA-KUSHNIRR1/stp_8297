@@ -1,40 +1,58 @@
 .modal-cookies {
   position: fixed;
-  bottom: -100%;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: bottom 0.9s ease-in-out;
+  top: 210px;
+  left: 0;
+  z-index: 1001;
 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
-  background: $_Popup_cookies_bg_color;
-}
-
-.modal-cookies-container {
-  max-width: 320px;
-  margin: 0 auto;
-  padding: 16px 24px;
 
   @include media(desktop) {
-    max-width: 1200px;
-    padding: 56px 246px;
+    top: 435px;
+  }
+}
+
+.modal-cookies-wrapper {
+  position: relative;
+  z-index: 1002;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 16px 24px;
+
+  background: $_Popup_cookies_bg_color;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  @include media(desktop) {
+    left: 50%;
+
+    padding: 56px 32px;
+
+    transform: translateX(-50%);
   }
 }
 
 // A class to show the modal
 
 .show {
-  bottom: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
-.modal-cookies-date {
+.modal-cookies-title-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  @include media(desktop) {
-    width: 708px;
-  }
+  justify-content: center;
 }
+
 .modal-cookies-title {
   margin-bottom: 32px;
 
@@ -48,6 +66,17 @@
 
   @include media(desktop) {
     font-size: 48px;
+  }
+}
+
+.modal-cookies-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 271px;
+
+  @include media(desktop) {
+    width: 708px;
   }
 }
 
@@ -102,7 +131,7 @@
 }
 
 .button.accept {
-  color: $_Popup_cookies_color_white;
+  color: #fff;
   background-color: $_Popup_cookies_btn_bg;
 
   transition: background-color 0.2s ease, color 0.2s ease;
