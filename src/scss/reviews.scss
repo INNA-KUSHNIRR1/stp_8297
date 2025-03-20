@@ -137,8 +137,7 @@
   color: $_reviews_text;
   background-color: $_reviews_bg_item;
   border-radius: 50%;
-  box-shadow: -1px 0px 0px 1px rgb(92 54 45 / 50%),
-    -5px 0px 2px 0px rgb(166 82 30 / 40%);
+  box-shadow: $_reviews_box_shadow_mobile;
 
   @include media(desktop) {
     width: 266px !important;
@@ -147,8 +146,7 @@
     padding: 68.38px 39.32px;
     backdrop-filter: blur(19px);
 
-    box-shadow: -4px 1px 0px 1px rgba(92, 54, 45, 0.5),
-      -3px 1px 2px 0px rgba(166, 82, 30, 0.4);
+    box-shadow: $_reviews_box_shadow_desktop;
   }
 }
 
