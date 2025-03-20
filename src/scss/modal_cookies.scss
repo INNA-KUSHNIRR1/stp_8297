@@ -1,58 +1,40 @@
 .modal-cookies {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 1001;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 0.9s ease-in-out;
 
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   width: 100%;
-
-  @include media(desktop) {
-    // bottom: 0;
-  }
+  background: $_Popup_cookies_bg_color;
 }
 
-.modal-cookies-wrapper {
-  position: relative;
-  z-index: 1002;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  width: 100%;
-
+.modal-cookies-container {
+  max-width: 320px;
+  margin: 0 auto;
   padding: 16px 24px;
 
-  background: $_Popup_cookies_bg_color;
-
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-
   @include media(desktop) {
-    left: 50%;
-
-    padding: 56px 32px;
-
-    transform: translateX(-50%);
+    max-width: 1200px;
+    padding: 56px 246px;
   }
 }
 
 // A class to show the modal
 
 .show {
-  opacity: 1;
-  visibility: visible;
+  bottom: 0;
 }
 
-.modal-cookies-title-wrapper {
+.modal-cookies-date {
   display: flex;
-  justify-content: center;
-}
+  flex-direction: column;
+  align-items: flex-start;
 
+  @include media(desktop) {
+    width: 708px;
+  }
+}
 .modal-cookies-title {
   margin-bottom: 32px;
 
@@ -66,17 +48,6 @@
 
   @include media(desktop) {
     font-size: 48px;
-  }
-}
-
-.modal-cookies-date {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 271px;
-
-  @include media(desktop) {
-    width: 708px;
   }
 }
 
