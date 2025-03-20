@@ -12,14 +12,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: start;
-  min-width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 16px 24px;
 
   @include media(desktop) {
     justify-content: flex-start;
     gap: 45.6px;
-    width: 1200px;
+    max-width: 1200px;
     padding: 24px 32px 32px 32px;
   }
 }
@@ -106,8 +106,6 @@
   height: 100vh;
   visibility: hidden;
 
-  padding: 88px 24px 16px 24px;
-
   background-color: aliceblue;
 
   transform: translateX(100%);
@@ -123,7 +121,11 @@
     background-image: url('../img/img/header/image_26@2x.png');
   }
 }
-
+.burger-menu-container {
+  padding: 88px 24px 16px 24px;
+  max-width: 320px;
+  margin: 0 auto;
+}
 .menu-blur {
   position: absolute;
   top: 0;

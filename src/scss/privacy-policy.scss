@@ -22,7 +22,8 @@ main {
 
 .legal-section-container h1 {
   margin: 40px 0 16px 0;
-
+  max-width: 320px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 24px;
   line-height: 1em;
@@ -30,7 +31,7 @@ main {
   font-family: Fredoka, sans-serif;
 
   @include media(desktop) {
-    margin: 74px 0 40px 0;
+    max-width: 1200px;
 
     font-size: 48px;
   }

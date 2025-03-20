@@ -18,9 +18,9 @@
 }
 
 .game-description-container {
-  min-width: 320px;
+  max-width: 320px;
   margin: 0 auto;
-  padding: 24.2px;
+  padding: 24px;
 
   background-image: url('../img/img/game_description/Game_Description_BG_mobile.png');
   background-repeat: no-repeat;
@@ -39,9 +39,8 @@
     }
   }
   @include media(desktop) {
-    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 129px;

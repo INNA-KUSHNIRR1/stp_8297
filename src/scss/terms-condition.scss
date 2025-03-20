@@ -53,9 +53,12 @@ main {
 }
 
 .legal-container {
+  max-width: 320px;
+  margin: 0 auto;
   padding: 24px;
 
   @include media(desktop) {
+    max-width: 1200px;
     padding: 40px 32px;
   }
 }

@@ -1,11 +1,7 @@
 .benefits {
   position: relative;
 
-  width: 100%;
-
   background: $_benefits_background;
-
-  overflow: hidden;
 }
 
 .benefits-scroll {
@@ -24,7 +20,8 @@
 }
 .benefits-container {
   position: relative;
-  min-width: 320px;
+
+  max-width: 320px;
   margin: 0 auto;
   padding: 24px;
 
@@ -181,8 +178,8 @@
 .benefits-dragon {
   position: absolute;
   right: 0;
-  bottom: 80px;
-  width: 200px;
+  bottom: 130px;
+  width: 159px;
   height: auto;
 
   @include media(desktop) {

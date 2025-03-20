@@ -19,7 +19,8 @@
 }
 
 .gallery-container {
-  min-width: 320px;
+  width: 100%;
+  max-width: 320px;
   margin: 0 auto;
   padding: 24px;
   background-image: none;
@@ -35,7 +36,7 @@
   }
   @include media(desktop) {
     padding: 80px 61px;
-    width: 100%;
+
     max-width: 1200px;
   }
 }
