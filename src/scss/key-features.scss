@@ -12,9 +12,6 @@
   }
 }
 
-.key-features-bg {
-}
-
 .key-features-container {
   max-width: 320px;
   margin: 0 auto;
@@ -25,7 +22,7 @@
   @include media(desktop) {
     background-image: url('../img/img/key_features/Key_Features_BG_desktop.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
     @media (min-resolution: 2dppx) {
       background-image: url('../img/img/key_features/Key_Features_BG_desktop@2x.png');
@@ -62,8 +59,7 @@
   flex-direction: column;
   gap: 8px;
   padding-left: 0;
-  // width: 272px;
-  // margin: 0 auto;
+
   counter-reset: list-counter;
   list-style: none;
 

@@ -29,9 +29,6 @@
   }
 }
 
-.reviews-bg {
-}
-
 .reviews-container {
   max-width: 320px;
   margin: 0 auto;
@@ -39,7 +36,7 @@
 
   background-image: url('../img/img/reviews/Reviews_BG_mobile.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   @media (min-resolution: 2dppx) {
     background-image: url('../img/img/reviews/Reviews_BG_mobile@2x.png');

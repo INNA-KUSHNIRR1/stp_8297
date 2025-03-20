@@ -16,8 +16,7 @@
     top: -113px;
   }
 }
-.benefits-bg {
-}
+
 .benefits-container {
   position: relative;
 
@@ -28,8 +27,7 @@
   color: $_benefits_brown;
   background-image: url('../img/img/benefits/Benefits_BG_mobile.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
 
   @media (min-resolution: 2dppx) {
     background-image: url('../img/img/benefits/Benefits_BG_mobile@2x.png');

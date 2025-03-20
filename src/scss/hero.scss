@@ -6,43 +6,23 @@
   overflow: hidden;
   scroll-margin-top: 113px;
 
-  background-image: linear-gradient(
-      273.73deg,
-      rgba(255, 255, 255, 0.0378) 1.7%,
-      rgba(57, 57, 57, 0.443866) 51.12%,
-      rgba(10, 10, 10, 0.54) 97.14%
-    ),
+  background-image: $_hero_linear_gradient,
     url('../img/img/hero/image_26_mobile_BG.png');
   background-repeat: no-repeat;
   background-size: cover;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        273.73deg,
-        rgba(255, 255, 255, 0.0378) 1.7%,
-        rgba(57, 57, 57, 0.443866) 51.12%,
-        rgba(10, 10, 10, 0.54) 97.14%
-      ),
+    background-image: $_hero_linear_gradient,
       url('../img/img/hero/image_26_mobile_BG@2x.png');
   }
 
   @include media(desktop) {
-    background-image: linear-gradient(
-        273.73deg,
-        rgba(255, 255, 255, 0.0378) 1.7%,
-        rgba(57, 57, 57, 0.443866) 51.12%,
-        rgba(10, 10, 10, 0.54) 97.14%
-      ),
+    background-image: $_hero_linear_gradient,
       url('../img/img/hero/hero_desktop_BG.png');
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          273.73deg,
-          rgba(255, 255, 255, 0.0378) 1.7%,
-          rgba(57, 57, 57, 0.443866) 51.12%,
-          rgba(10, 10, 10, 0.54) 97.14%
-        ),
+      background-image: $_hero_linear_gradient,
         url('../img/img/hero/hero_desktop_BG@2x.png');
     }
   }
@@ -57,7 +37,7 @@
   width: 100%;
   height: 100%;
 
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
 }
 
 .hero-container {
@@ -93,7 +73,7 @@
   color: $_hero_title;
 
   @include media(desktop) {
-    max-width: 785px;
+    max-width: 666px;
     margin-bottom: 16px;
 
     font-size: 48px;
@@ -152,6 +132,7 @@
 
   @include media(desktop) {
     width: 100%;
+    border-radius: 16px;
     gap: 26px;
     padding: 16px 30px;
   }
@@ -159,7 +140,6 @@
 
 .hero-btn:hover,
 .hero-btn:focus {
-  transform: scale(1.02);
   color: $_hero_btn_text_hover_active;
   background-color: $_hero_btn_bg_hover;
 }
@@ -187,6 +167,7 @@
   font-style: italic;
   font-size: 12px;
   line-height: 1.5em;
+
   letter-spacing: 0%;
   font-family: Open Sans;
 
@@ -233,7 +214,7 @@
   margin-top: 7px;
   margin: 0;
 
-  border: 4px solid #ffffff;
+  border: $_hero_border_pic_mobile;
   border-radius: 6px;
 
   transform: rotate(18deg);
@@ -246,12 +227,10 @@
     height: 401px;
 
     border-radius: 16px;
-    border: 6px solid #ffffff;
+    border: $_hero_border_pic_desktop;
 
     transform: rotate(18deg);
-    box-shadow: 8px 11px 29px 0px #000000c9, 33px 42px 54px 0px #000000ad,
-      74px 95px 72px 0px #00000066, 131px 170px 86px 0px #0000001f,
-      205px 265px 94px 0px #00000003;
+    box-shadow: $_hero_box_shadow;
   }
 }
 

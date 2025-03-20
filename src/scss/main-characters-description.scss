@@ -13,17 +13,13 @@
   }
 }
 
-.main-characters-bg {
-}
-
 .main-characters-container {
   max-width: 320px;
   margin: 0 auto;
   padding: 24px 24px 0 24px;
   background-image: url('../img/img/main_characters_description/Main_Characters_Description_BG_mobile.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
 
   @media (min-resolution: 2dppx) {
     background-image: url('../img/img/main_characters_description/Main_Characters_Description_BG_mobile@2x.png');
@@ -39,7 +35,7 @@
   @include media(desktop) {
     max-width: 1200px;
 
-    padding: 80px 19px;
+    padding: 80px 9px 80px 59px;
   }
 }
 
@@ -71,12 +67,12 @@
   @include media(desktop) {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 47px;
+    row-gap: 33px;
     column-gap: 0px;
     justify-content: space-evenly;
-
+    width: 1132px;
     .main-characters-item:nth-child(2) {
-      margin-left: -125px;
+      margin-left: -118px;
     }
 
     .main-characters-item:nth-child(3) {
@@ -124,7 +120,7 @@
 
   @include media(desktop) {
     align-content: center;
-    width: 387px;
+    width: 377px;
     height: 207px;
     padding: 14px 69px 34px 69px;
 

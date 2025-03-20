@@ -15,6 +15,17 @@ $_hero_btn_bg_hover: #efbf5d;
 $_hero_btn_bg_active: #ffe0a1;
 $_hero_btn_text: #414141;
 $_hero_btn_text_hover_active: #3b242a;
+$_hero_box_shadow: 8px 11px 29px 0px #000000c9, 33px 42px 54px 0px #000000ad,
+  74px 95px 72px 0px #00000066, 131px 170px 86px 0px #0000001f,
+  205px 265px 94px 0px #00000003;
+$_hero_linear_gradient: linear-gradient(
+  273.73deg,
+  rgba(255, 255, 255, 0.0378) 1.7%,
+  rgba(57, 57, 57, 0.443866) 51.12%,
+  rgba(10, 10, 10, 0.54) 97.14%
+);
+$_hero_border_pic_mobile: 4px solid #ffffff;
+$_hero_border_pic_desktop: 6px solid #ffffff;
 
 $_benefits_background: linear-gradient(180deg, #f1c25e 0%, #b58a32 100%);
 $_benefits_brown: #3b242a;
